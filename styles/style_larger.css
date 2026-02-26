@@ -1,0 +1,61 @@
+@media (min-width: 660px) {
+  .site-header {
+    background-color: var(--secondaryColor);
+    padding: 0 10px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .nav-toggle { display: none;}
+
+  .primary-nav {
+    position: static;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 20px;
+    background: transparent;
+    border: none;
+  }
+
+  .primary-nav a {
+    background: transparent;
+    border: none;
+    padding: 6px 10px;
+  }
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 400px;           
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "about photograph"
+    "classes-main classes-main";
+  gap: 1rem;
+}
+
+.about { grid-area: about; }
+.photograph { grid-area: photograph; }
+.classes-main { grid-area: classes-main; }
+
+.about, .photograph {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+}

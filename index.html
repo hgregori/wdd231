@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="og:viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Project</title>
+    <meta name="author" content="Henrique Gregorio">
+    <meta name="og:description" content="Reviweing and checking my understanding">
+    <meta name="og:images" content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/style_small.css">
+    <link rel="stylesheet" href="styles/style_larger.css">
+
+    <script src="script/date.js" defer></script>
+    <script src="script/navigation.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="images/henrique_logo.svg" alt="Henrique Gregorio logo" class="logo" width="45" height="45">
+    <span class="brand-name">Henrique</span>
+  </a>
+
+  <!-- Accessible hamburger button -->
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-burger" aria-hidden="true">☰</span>
+    <span class="icon-close" aria-hidden="true">✕</span>
+  </button>
+
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+</header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="card">
+            <section class="about">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa ad consequuntur, rem, iste repudiandae vitae facilis doloremque amet maxime, facere temporibus. Suscipit perferendis nulla dolor dolores fugiat alias illum.</p>
+            </section>
+            <section class="photograph">
+                <h2>Student Photo</h2>
+                <img src="images/student_photo.jpg" alt="Student Photo">
+            </section>
+            <section class="classes-main">
+                <h2>Web Certificates courses</h2>
+                <div class="classes-card">
+                    <span class="class">CSS 210</span>
+                    <span class="class">WDD 231</span>
+                    <span class="class">WDD 131</span>
+                    <span class="class">CSS 111</span>
+                    <span class="class">CSS 110</span>
+                    <span class="class">WDD 130</span>
+                </div>
+                <p>Doing all the classes about you will earn 12 credits.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <nav class="icons">
+            <ul>
+                <li><a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram"></a></li>
+            </ul>
+            </nav>
+        </div>
+        
+        <div class="footer-main">
+            <img src="images/henrique_logo.svg" alt="logo" width="50px">
+            <div class="rights">
+                <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
+                <p id="lastModified" class="lastmod"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
