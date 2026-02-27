@@ -190,6 +190,7 @@ footer p, footer a, footer h3 {
   align-items: center;
 }
 
+/* When there is no logo, allow full width content */
 .business-card:not(:has(.business-logo)) {
   grid-template-columns: 1fr;
 }
@@ -249,4 +250,6 @@ footer p, footer a, footer h3 {
   outline: 2px solid var(--optional-color);
   outline-offset: 2px;
 }
+
+/* hamburger bottom */
 
