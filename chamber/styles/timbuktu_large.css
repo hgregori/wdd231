@@ -1,0 +1,39 @@
+@media (min-width:720px) {
+
+.footer-main {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media .icons ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-main .rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    gap: 20px;
+}
+
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "companyName": "Aurora Tech Labs",
+    "companyAddresses": [
+      "1350 Innovation Drive, Suite 220, San Jose, CA 95134, USA",
+      "4F, 1-2-3 Shibuya, Shibuya-ku, Tokyo 150-0002, Japan"
+    ],
+    "companyPhoneNumber": "+1-408-555-0135",
+    "companyWebsiteUrl": "https://www.auroratechlabs.com",
+    "imageFileName": "aurora-tech-labs.png",
+    "membershipLevel": 3,
+    "industry": "Cloud & AI",
+    "foundedYear": 2014,
+    "employeeCount": 480,
+    "hours": {
+      "monday": "09:00-18:00",
+      "tuesday": "09:00-18:00",
+      "wednesday": "09:00-18:00",
+      "thursday": "09:00-18:00",
+      "friday": "09:00-18:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/auroratechlabs",
+      "twitter": "https://twitter.com/auroratechlabs"
+    },
+    "description": "Provider of scalable AI inference services and developer tooling for MLOps."
+  },
+  {
+    "companyName": "GreenBridge Organics",
+    "companyAddresses": [
+      "28 Riverbend Rd, Portland, OR 97204, USA"
+    ],
+    "companyPhoneNumber": "+1-971-555-0178",
+    "companyWebsiteUrl": "https://www.greenbridgeorganics.com",
+    "imageFileName": "greenbridge-organics.jpg",
+    "membershipLevel": 2,
+    "industry": "Sustainable Consumer Goods",
+    "foundedYear": 2009,
+    "employeeCount": 120,
+    "hours": {
+      "monday": "08:00-17:00",
+      "tuesday": "08:00-17:00",
+      "wednesday": "08:00-17:00",
+      "thursday": "08:00-17:00",
+      "friday": "08:00-17:00",
+      "saturday": "10:00-14:00",
+      "sunday": "Closed"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/greenbridgeorganics",
+      "facebook": "https://www.facebook.com/greenbridgeorganics"
+    },
+    "description": "Organic household products manufacturer with a closed-loop packaging program."
+  },
+  {
+    "companyName": "Atlas Freight Solutions",
+    "companyAddresses": [
+      "77 Dockside Ave, Liverpool L3 1DL, United Kingdom",
+      "Rua do Porto, 300, Vila Nova de Gaia, 4400-000, Portugal"
+    ],
+    "companyPhoneNumber": "+44-151-555-0190",
+    "companyWebsiteUrl": "https://www.atlasfreight.io",
+    "imageFileName": "atlas-freight-solutions.webp",
+    "membershipLevel": 1,
+    "industry": "Logistics & Supply Chain",
+    "foundedYear": 1998,
+    "employeeCount": 860,
+    "hours": {
+      "monday": "24h",
+      "tuesday": "24h",
+      "wednesday": "24h",
+      "thursday": "24h",
+      "friday": "24h",
+      "saturday": "24h",
+      "sunday": "24h"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/atlasfreightsolutions"
+    },
+    "description": "International freight forwarder specializing in cold-chain and time-critical cargo."
+  },
+  {
+    "companyName": "Novella Health",
+    "companyAddresses": [
+      "640 Beacon St, Boston, MA 02215, USA"
+    ],
+    "companyPhoneNumber": "+1-617-555-0112",
+    "companyWebsiteUrl": "https://www.novellahealth.co",
+    "imageFileName": "novella-health.svg",
+    "membershipLevel": 3,
+    "industry": "Digital Health",
+    "foundedYear": 2017,
+    "employeeCount": 210,
+    "hours": {
+      "monday": "08:00-18:00",
+      "tuesday": "08:00-18:00",
+      "wednesday": "08:00-18:00",
+      "thursday": "08:00-18:00",
+      "friday": "08:00-18:00",
+      "saturday": "09:00-13:00",
+      "sunday": "Closed"
+    },
+    "social": {
+      "twitter": "https://twitter.com/novellahealth",
+      "linkedin": "https://www.linkedin.com/company/novellahealth"
+    },
+    "description": "Telemedicine platform with remote diagnostics and chronic care management."
+  },
+  {
+    "companyName": "BlueCedar Finance",
+    "companyAddresses": [
+      "300 King St W, Suite 1500, Toronto, ON M5V 1J2, Canada"
+    ],
+    "companyPhoneNumber": "+1-416-555-0186",
+    "companyWebsiteUrl": "https://www.bluecedarfinance.com",
+    "imageFileName": "bluecedar-finance.jpeg",
+    "membershipLevel": 2,
+    "industry": "Fintech",
+    "foundedYear": 2012,
+    "employeeCount": 95,
+    "hours": {
+      "monday": "09:00-17:30",
+      "tuesday": "09:00-17:30",
+      "wednesday": "09:00-17:30",
+      "thursday": "09:00-17:30",
+      "friday": "09:00-17:30",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/bluecedarfinance"
+    },
+    "description": "SMB lending and cash-flow analytics with real-time underwriting APIs."
+  },
+  {
+    "companyName": "Solstice Media Works",
+    "companyAddresses": [
+      "19 Market St, Sydney NSW 2000, Australia"
+    ],
+    "companyPhoneNumber": "+61-2-5550-0144",
+    "companyWebsiteUrl": "https://www.solsticemediaworks.com",
+    "imageFileName": "solstice-media-works.jpg",
+    "membershipLevel": 1,
+    "industry": "Creative & Marketing",
+    "foundedYear": 2006,
+    "employeeCount": 55,
+    "hours": {
+      "monday": "09:00-18:00",
+      "tuesday": "09:00-18:00",
+      "wednesday": "09:00-18:00",
+      "thursday": "09:00-18:00",
+      "friday": "09:00-18:00",
+      "saturday": "By appointment",
+      "sunday": "Closed"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/solsticemediaworks",
+      "vimeo": "https://vimeo.com/solsticemediaworks"
+    },
+    "description": "Full-service content studio for branded video, podcasts, and campaigns."
+  },
+  {
+    "companyName": "TerraGrid Energy",
+    "companyAddresses": [
+      "800 Windmill Pkwy, Austin, TX 78701, USA",
+      "Av. Paulista, 1374, 9º andar, São Paulo, SP 01310-100, Brazil"
+    ],
+    "companyPhoneNumber": "+1-737-555-0159",
+    "companyWebsiteUrl": "https://www.terragrid.energy",
+    "imageFileName": "terragrid-energy.png",
+    "membershipLevel": 3,
+    "industry": "Renewable Energy",
+    "foundedYear": 2015,
+    "employeeCount": 320,
+    "hours": {
+      "monday": "08:30-17:30",
+      "tuesday": "08:30-17:30",
+      "wednesday": "08:30-17:30",
+      "thursday": "08:30-17:30",
+      "friday": "08:30-17:30",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/terragrid-energy",
+      "twitter": "https://twitter.com/terragrid"
+    },
+    "description": "Utility-scale solar and battery storage developer with grid optimization software."
+  },
+  {
+    "companyName": "Harbor & Hearth Hospitality",
+    "companyAddresses": [
+      "12 Old Wharf Rd, Charleston, SC 29401, USA"
+    ],
+    "companyPhoneNumber": "+1-843-555-0121",
+    "companyWebsiteUrl": "https://www.harborhearth.com",
+    "imageFileName": "harbor-hearth-hospitality.webp",
+    "membershipLevel": 2,
+    "industry": "Hospitality",
+    "foundedYear": 2003,
+    "employeeCount": 260,
+    "hours": {
+      "monday": "07:00-22:00",
+      "tuesday": "07:00-22:00",
+      "wednesday": "07:00-22:00",
+      "thursday": "07:00-22:00",
+      "friday": "07:00-23:00",
+      "saturday": "07:00-23:00",
+      "sunday": "07:00-21:00"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/harborhearth",
+      "facebook": "https://www.facebook.com/harborhearth"
+    },
+    "description": "Boutique hotel and coastal dining group focused on local sourcing and heritage."
+  }
+]

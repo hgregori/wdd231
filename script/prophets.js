@@ -17,7 +17,7 @@ async function getProphetData() {
 
 getProphetData();
 
-const displayProphets = (prophets) => {  // ✅ use =>
+const displayProphets = (prophets) => {
   prophets.forEach((prophet) => {
     // ✅ always use document.createElement
     const card = document.createElement('section');
