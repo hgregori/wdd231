@@ -1,8 +1,5 @@
 @media (min-width: 660px) {
   .site-header {
-    background-color: var(--secondaryColor);
-    padding: 0 10px 5px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -18,8 +15,6 @@
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px;
-    padding: 0 20px;
     background: transparent;
     border: none;
   }
