@@ -1,6 +1,5 @@
 @media (min-width: 660px) {
   .site-header {
-    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
@@ -9,13 +8,11 @@
   .primary-nav {
     position: static;
     opacity: 1 !important;
-    visibility: visible !important;
+    visibility: visible;
     transform: none !important;
-    transition: none !important;
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
-    background: transparent;
     border: none;
   }
 
