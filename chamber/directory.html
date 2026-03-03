@@ -21,16 +21,30 @@
         <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
         <meta property="og:locale" content="en_US">
 
-        <link rel="stylesheet" href="styles/timbuktu_large.css">
-        <link rel="stylesheet" href="styles/timbuktu_small.css" >
+
+        <link rel="preload" href="styles/timbuktu_small.css" as="style" />
+        <link rel="stylesheet" href="styles/timbuktu_small.css" media="print" onload="this.media='all'">
+
+        <link rel="preload" href="styles/timbuktu_large.css" as="style" />
+        <link rel="stylesheet" href="styles/timbuktu_large.css" media="print" onload="this.media='all'">
+
 
 
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
         <script src="scripts/timbuktu.js" defer></script>
         <script src="scripts/date.js" defer></script>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+     
+
+        <link rel="preload" 
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" 
+            as="style">
+
+        <link rel="stylesheet" 
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" 
+            media="print" 
+            onload="this.media='all'">
+
     </head>
 <body>
     <header class="site-header">

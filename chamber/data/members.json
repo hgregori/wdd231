@@ -1,17 +1,151 @@
 [
   {
-    "companyName": "Aurora Tech Labs",
+    "companyName": "Itaú Unibanco",
     "companyAddresses": [
-      "1350 Innovation Drive, Suite 220, San Jose, CA 95134, USA",
-      "4F, 1-2-3 Shibuya, Shibuya-ku, Tokyo 150-0002, Japan"
+      "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": "+1-408-555-0135",
-    "companyWebsiteUrl": "https://www.auroratechlabs.com",
-    "imageFileName": "aurora-tech-labs.png",
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://www.itau.com.br",
+    "imageFileName": "../images/itau-og.webp",
     "membershipLevel": 3,
-    "industry": "Cloud & AI",
-    "foundedYear": 2014,
-    "employeeCount": 480,
+    "industry": "Banking",
+    "foundedYear": 2008,
+    "employeeCount": null,
+    "hours": {
+      "monday": "10:00-16:00",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-16:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/itau/",
+      "instagram": "https://www.instagram.com/itau"
+    },
+    "description": "Um dos maiores bancos da América Latina, com foco em varejo, corporate e investimentos."
+  },
+  {
+    "companyName": "Bradesco",
+    "companyAddresses": [
+      "Osasco, SP, Brazil"
+    ],
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://banco.bradesco",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/bradesco-og.webp",
+    "membershipLevel": 3,
+    "industry": "Banking",
+    "foundedYear": 1943,
+    "employeeCount": null,
+    "hours": {
+      "monday": "10:00-16:00",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-16:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/bradesco/",
+      "instagram": "https://www.instagram.com/bradesco"
+    },
+    "description": "Banco brasileiro de grande porte com presença nacional e ampla oferta de serviços financeiros."
+  },
+  {
+    "companyName": "Banco do Brasil",
+    "companyAddresses": [
+      "Brasília, DF, Brazil"
+    ],
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://www.bb.com.br",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/banco-do-brasil-og.webp",
+    "membershipLevel": 3,
+    "industry": "Banking",
+    "foundedYear": 1808,
+    "employeeCount": null,
+    "hours": {
+      "monday": "10:00-16:00",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-16:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/banco-do-brasil/",
+      "instagram": "https://www.instagram.com/bancodobrasil"
+    },
+    "description": "Instituição financeira pública com serviços para pessoas físicas, jurídicas e governo."
+  },
+  {
+    "companyName": "Santander Brasil",
+    "companyAddresses": [
+      "São Paulo, SP, Brazil"
+    ],
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://www.santander.com.br",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/santander-brasil-og.webp",
+    "membershipLevel": 3,
+    "industry": "Banking",
+    "foundedYear": 1982,
+    "employeeCount": null,
+    "hours": {
+      "monday": "10:00-16:00",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-16:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/santanderbrasil/",
+      "instagram": "https://www.instagram.com/santander_br"
+    },
+    "description": "Subsidiária do Grupo Santander, com forte atuação em varejo, empresas e corporate no Brasil."
+  },
+  {
+    "companyName": "Caixa Econômica Federal",
+    "companyAddresses": [
+      "Brasília, DF, Brazil"
+    ],
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://www.caixa.gov.br",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/caixa-og.webp",
+    "membershipLevel": 2,
+    "industry": "Banking",
+    "foundedYear": 1861,
+    "employeeCount": null,
+    "hours": {
+      "monday": "10:00-16:00",
+      "tuesday": "10:00-16:00",
+      "wednesday": "10:00-16:00",
+      "thursday": "10:00-16:00",
+      "friday": "10:00-16:00",
+      "saturday": "Closed",
+      "sunday": "Closed"
+    },
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/caixa/",
+      "instagram": "https://www.instagram.com/caixa"
+    },
+    "description": "Banco público com foco em habitação, programas sociais e serviços bancários para a população."
+  },
+  {
+    "companyName": "BTG Pactual",
+    "companyAddresses": [
+      "São Paulo, SP, Brazil"
+    ],
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://www.btgpactual.com",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/btg-pactual-og.webp",
+    "membershipLevel": 2,
+    "industry": "Investment Banking",
+    "foundedYear": 1983,
+    "employeeCount": null,
     "hours": {
       "monday": "09:00-18:00",
       "tuesday": "09:00-18:00",
@@ -22,51 +156,23 @@
       "sunday": "Closed"
     },
     "social": {
-      "linkedin": "https://www.linkedin.com/company/auroratechlabs",
-      "twitter": "https://twitter.com/auroratechlabs"
+      "linkedin": "https://www.linkedin.com/company/btgpactual/",
+      "instagram": "https://www.instagram.com/btgpactual"
     },
-    "description": "Provider of scalable AI inference services and developer tooling for MLOps."
+    "description": "Banco de investimentos e gestor de ativos com atuação global."
   },
   {
-    "companyName": "GreenBridge Organics",
+    "companyName": "Nubank",
     "companyAddresses": [
-      "28 Riverbend Rd, Portland, OR 97204, USA"
+      "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": "+1-971-555-0178",
-    "companyWebsiteUrl": "https://www.greenbridgeorganics.com",
-    "imageFileName": "greenbridge-organics.jpg",
-    "membershipLevel": 2,
-    "industry": "Sustainable Consumer Goods",
-    "foundedYear": 2009,
-    "employeeCount": 120,
-    "hours": {
-      "monday": "08:00-17:00",
-      "tuesday": "08:00-17:00",
-      "wednesday": "08:00-17:00",
-      "thursday": "08:00-17:00",
-      "friday": "08:00-17:00",
-      "saturday": "10:00-14:00",
-      "sunday": "Closed"
-    },
-    "social": {
-      "instagram": "https://www.instagram.com/greenbridgeorganics",
-      "facebook": "https://www.facebook.com/greenbridgeorganics"
-    },
-    "description": "Organic household products manufacturer with a closed-loop packaging program."
-  },
-  {
-    "companyName": "Atlas Freight Solutions",
-    "companyAddresses": [
-      "77 Dockside Ave, Liverpool L3 1DL, United Kingdom",
-      "Rua do Porto, 300, Vila Nova de Gaia, 4400-000, Portugal"
-    ],
-    "companyPhoneNumber": "+44-151-555-0190",
-    "companyWebsiteUrl": "https://www.atlasfreight.io",
-    "imageFileName": "atlas-freight-solutions.webp",
+    "companyPhoneNumber": null,
+    "companyWebsiteUrl": "https://nubank.com.br",
+    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/nubank-og.webp",
     "membershipLevel": 1,
-    "industry": "Logistics & Supply Chain",
-    "foundedYear": 1998,
-    "employeeCount": 860,
+    "industry": "Digital Banking / Fintech",
+    "foundedYear": 2013,
+    "employeeCount": null,
     "hours": {
       "monday": "24h",
       "tuesday": "24h",
@@ -77,143 +183,9 @@
       "sunday": "24h"
     },
     "social": {
-      "linkedin": "https://www.linkedin.com/company/atlasfreightsolutions"
+      "linkedin": "https://www.linkedin.com/company/nubank/",
+      "instagram": "https://www.instagram.com/nubank"
     },
-    "description": "International freight forwarder specializing in cold-chain and time-critical cargo."
-  },
-  {
-    "companyName": "Novella Health",
-    "companyAddresses": [
-      "640 Beacon St, Boston, MA 02215, USA"
-    ],
-    "companyPhoneNumber": "+1-617-555-0112",
-    "companyWebsiteUrl": "https://www.novellahealth.co",
-    "imageFileName": "novella-health.svg",
-    "membershipLevel": 3,
-    "industry": "Digital Health",
-    "foundedYear": 2017,
-    "employeeCount": 210,
-    "hours": {
-      "monday": "08:00-18:00",
-      "tuesday": "08:00-18:00",
-      "wednesday": "08:00-18:00",
-      "thursday": "08:00-18:00",
-      "friday": "08:00-18:00",
-      "saturday": "09:00-13:00",
-      "sunday": "Closed"
-    },
-    "social": {
-      "twitter": "https://twitter.com/novellahealth",
-      "linkedin": "https://www.linkedin.com/company/novellahealth"
-    },
-    "description": "Telemedicine platform with remote diagnostics and chronic care management."
-  },
-  {
-    "companyName": "BlueCedar Finance",
-    "companyAddresses": [
-      "300 King St W, Suite 1500, Toronto, ON M5V 1J2, Canada"
-    ],
-    "companyPhoneNumber": "+1-416-555-0186",
-    "companyWebsiteUrl": "https://www.bluecedarfinance.com",
-    "imageFileName": "bluecedar-finance.jpeg",
-    "membershipLevel": 2,
-    "industry": "Fintech",
-    "foundedYear": 2012,
-    "employeeCount": 95,
-    "hours": {
-      "monday": "09:00-17:30",
-      "tuesday": "09:00-17:30",
-      "wednesday": "09:00-17:30",
-      "thursday": "09:00-17:30",
-      "friday": "09:00-17:30",
-      "saturday": "Closed",
-      "sunday": "Closed"
-    },
-    "social": {
-      "linkedin": "https://www.linkedin.com/company/bluecedarfinance"
-    },
-    "description": "SMB lending and cash-flow analytics with real-time underwriting APIs."
-  },
-  {
-    "companyName": "Solstice Media Works",
-    "companyAddresses": [
-      "19 Market St, Sydney NSW 2000, Australia"
-    ],
-    "companyPhoneNumber": "+61-2-5550-0144",
-    "companyWebsiteUrl": "https://www.solsticemediaworks.com",
-    "imageFileName": "solstice-media-works.jpg",
-    "membershipLevel": 1,
-    "industry": "Creative & Marketing",
-    "foundedYear": 2006,
-    "employeeCount": 55,
-    "hours": {
-      "monday": "09:00-18:00",
-      "tuesday": "09:00-18:00",
-      "wednesday": "09:00-18:00",
-      "thursday": "09:00-18:00",
-      "friday": "09:00-18:00",
-      "saturday": "By appointment",
-      "sunday": "Closed"
-    },
-    "social": {
-      "instagram": "https://www.instagram.com/solsticemediaworks",
-      "vimeo": "https://vimeo.com/solsticemediaworks"
-    },
-    "description": "Full-service content studio for branded video, podcasts, and campaigns."
-  },
-  {
-    "companyName": "TerraGrid Energy",
-    "companyAddresses": [
-      "800 Windmill Pkwy, Austin, TX 78701, USA",
-      "Av. Paulista, 1374, 9º andar, São Paulo, SP 01310-100, Brazil"
-    ],
-    "companyPhoneNumber": "+1-737-555-0159",
-    "companyWebsiteUrl": "https://www.terragrid.energy",
-    "imageFileName": "terragrid-energy.png",
-    "membershipLevel": 3,
-    "industry": "Renewable Energy",
-    "foundedYear": 2015,
-    "employeeCount": 320,
-    "hours": {
-      "monday": "08:30-17:30",
-      "tuesday": "08:30-17:30",
-      "wednesday": "08:30-17:30",
-      "thursday": "08:30-17:30",
-      "friday": "08:30-17:30",
-      "saturday": "Closed",
-      "sunday": "Closed"
-    },
-    "social": {
-      "linkedin": "https://www.linkedin.com/company/terragrid-energy",
-      "twitter": "https://twitter.com/terragrid"
-    },
-    "description": "Utility-scale solar and battery storage developer with grid optimization software."
-  },
-  {
-    "companyName": "Harbor & Hearth Hospitality",
-    "companyAddresses": [
-      "12 Old Wharf Rd, Charleston, SC 29401, USA"
-    ],
-    "companyPhoneNumber": "+1-843-555-0121",
-    "companyWebsiteUrl": "https://www.harborhearth.com",
-    "imageFileName": "harbor-hearth-hospitality.webp",
-    "membershipLevel": 2,
-    "industry": "Hospitality",
-    "foundedYear": 2003,
-    "employeeCount": 260,
-    "hours": {
-      "monday": "07:00-22:00",
-      "tuesday": "07:00-22:00",
-      "wednesday": "07:00-22:00",
-      "thursday": "07:00-22:00",
-      "friday": "07:00-23:00",
-      "saturday": "07:00-23:00",
-      "sunday": "07:00-21:00"
-    },
-    "social": {
-      "instagram": "https://www.instagram.com/harborhearth",
-      "facebook": "https://www.facebook.com/harborhearth"
-    },
-    "description": "Boutique hotel and coastal dining group focused on local sourcing and heritage."
+    "description": "Plataforma de serviços financeiros digitais com foco em experiência do cliente."
   }
-]
+] 

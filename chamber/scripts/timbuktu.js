@@ -26,6 +26,12 @@ const displayBusiness = (businesses) => {
         const website = document.createElement("a");
         const membership = document.createElement("p");
         const linkedin = document.createElement("a");
+        const img = document.createElement("img");
+
+        img.setAttribute("src", bus.imageFileName);
+        img.setAttribute("alt", `${bus.companyName} Logo`);
+        img.classList.add("company-logo");
+        img.setAttribute("loading", "lazy");    
 
         name.textContent = bus.companyName;
         address.textContent = `Address: ${bus.companyAddresses[0]}`;
@@ -39,11 +45,13 @@ const displayBusiness = (businesses) => {
         linkedin.setAttribute("target", "_blank");
 
         card.appendChild(name);
+        card.appendChild(img);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
         card.appendChild(membership);
         card.appendChild(linkedin);
+        
 
         business.appendChild(card);
     });
