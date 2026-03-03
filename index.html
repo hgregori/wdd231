@@ -15,6 +15,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/classes.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,19 +54,28 @@
             <section class="photograph">
                 <h2>Student Photo</h2>
                 <img src="images/student_photo.jpg" alt="Student Photo">
-            </section>
-            <section class="classes-main">
-                <h2>Web Certificates courses</h2>
-                <div class="classes-card">
-                    <span class="class">CSS 210</span>
-                    <span class="class">WDD 231</span>
-                    <span class="class">WDD 131</span>
-                    <span class="class">CSS 111</span>
-                    <span class="class">CSS 110</span>
-                    <span class="class">WDD 130</span>
-                </div>
-                <p>Doing all the classes about you will earn 12 credits.</p>
-            </section>
+        </section>
+        
+        <section class="classes-main">
+            <h2>Web Certificates Courses</h2>
+            <div class="filter-buttons">
+                <button data-filter="completed">Completed</button>
+                <button data-filter="not-completed">Not Completed</button>
+                <button data-filter="all">All</button>
+            </div>
+
+            <div class="classes-card">
+                <span class="class" data-completed="false" data-credits="2">CSS 210</span>
+                <span class="class" data-completed="false" data-credits="2">WDD 231</span>
+                <span class="class" data-completed="true" data-credits="2">WDD 131</span>
+                <span class="class" data-completed="true" data-credits="2">CSS 111</span>
+                <span class="class" data-completed="true" data-credits="2">CSS 110</span>
+                <span class="class" data-completed="true" data-credits="2">WDD 130</span>
+            </div>
+
+            <p id="credits-output">Doing all the classes above you will earn 12 credits.</p>
+        </section>
+
         </div>
     </main>
     <footer>

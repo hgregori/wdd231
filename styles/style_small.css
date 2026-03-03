@@ -190,6 +190,30 @@ main h2 {
   margin: 6px;
 }
 
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 6px 12px;
+    border: 2px solid var(--primaryColor);
+    background: var(--bright);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:focus-visible {
+    background: var(--secondaryColor);
+    color: white;
+}
+
 /* --- Social Media --- */
 .social-media ul {
   display: flex;
