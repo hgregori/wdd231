@@ -1,4 +1,5 @@
-  * {
+/* --- Base Reset --- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +7,7 @@
     font-weight: 400;
 }
 
+/* --- Variables --- */
 :root {
     --backgroundColor: #ECE7D1;
     --primaryColor:  #8A7650;
@@ -17,11 +19,13 @@ body {
     background-color: var(--backgroundColor);
 }
 
+/* --- Header --- */
 .site-header {
   background-color: var(--secondaryColor);
   padding: 0 10px 5px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto; 
+  align-items: center;
 }
 
 .brand {
@@ -29,27 +33,19 @@ body {
   align-items: center;
 }
 
-.primary-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  padding: 0 20px;
-}
-
 .site-header a {
   text-decoration: none;
   color: black;
 }
 
-/* --- Hamburger button styles --- */
+/* --- Navigation --- */
 .nav-toggle {
   appearance: none;
   background: transparent;
   border: 2px solid transparent;
   padding: 8px 10px;
   border-radius: 8px;
-  margin-left: auto;              /* pushes button to the right */
+  margin-left: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -66,20 +62,21 @@ body {
   background: rgba(0,0,0,0.06);
 }
 
-.nav-toggle .icon-close { display: none; }      /* default: show burger */
+.nav-toggle .icon-close {
+  display: none;
+}
 
-/* Reduce/disable animations for those who prefer */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .primary-nav {
     transition: none !important;
   }
 }
 
-/* --- Mobile nav behavior --- */
+/* --- Mobile Nav (default) --- */
 .primary-nav {
-  /* hidden by default on small screens */
   position: absolute;
-  top: calc(60px);                 /* adjust to your header height */
+  top: 60px;
   right: 10px;
   left: 10px;
   background: var(--secondaryColor);
@@ -88,8 +85,6 @@ body {
   padding: 10px;
   display: grid;
   gap: 10px;
-
-  /* hide initially */
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);
@@ -123,18 +118,7 @@ body {
 .nav-toggle[aria-expanded="true"] .icon-burger { display: none; }
 .nav-toggle[aria-expanded="true"] .icon-close { display: inline; }
 
-.site-header {
-  background-color: var(--secondaryColor);
-  padding: 0 10px 5px;
-  display: grid;
-  grid-template-columns: 1fr auto; 
-  align-items: center;
-}
-
-.primary-nav {
-  display: grid;
-}
-
+/* --- Accessibility --- */
 .sr-only {
   position: absolute !important;
   width: 1px; height: 1px;
@@ -143,12 +127,14 @@ body {
   white-space: nowrap; border: 0;
 }
 
+/* --- Main Content --- */
 main h1 {
   text-align: center;
   margin: 10px;
   border-bottom: 1px solid #8A7650;
 }
 
+/* --- Card Layout --- */
 .card {
   display: grid;
   grid-template-columns: 1fr;
@@ -158,12 +144,12 @@ main h1 {
     "classes-main";
 }
 
-.about, .photograph {
+.about,
+.photograph {
   padding: 10px;
   margin: 5px;
   border: 2px solid var(--primaryColor);
   border-radius: 10px;
-
   display: grid;
   grid-template-rows: auto 1fr;
 }
@@ -176,19 +162,20 @@ main h2 {
 }
 
 .photograph img {
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   margin: 0 auto;
   border-radius: 8px;
   border: 1px solid var(--bright);
 }
 
-.classes-card{
+/* --- Classes --- */
+.classes-card {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
 .class {
@@ -203,6 +190,7 @@ main h2 {
   margin: 6px;
 }
 
+/* --- Social Media --- */
 .social-media ul {
   display: flex;
   text-decoration: none;
@@ -210,13 +198,13 @@ main h2 {
   justify-content: center;
   margin-top: 15px;
   gap: 5px;
-  
 }
 
 .social-media img {
   width: 40px;
 }
 
+/* --- Footer --- */
 .footer-main {
   background-color: var(--secondaryColor);
   display: grid;
@@ -229,3 +217,5 @@ main h2 {
 .footer-main p {
   text-align: center;
 }
+
+

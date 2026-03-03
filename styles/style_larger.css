@@ -1,9 +1,12 @@
 @media (min-width: 660px) {
+
   .site-header {
     align-items: center;
   }
 
-  .nav-toggle { display: none;}
+  .nav-toggle {
+    display: none;
+  }
 
   .primary-nav {
     position: static;
@@ -22,32 +25,20 @@
     padding: 6px 10px;
   }
 
-.card {
-  display: grid;
-  grid-template-columns: 1fr 400px;           
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "about photograph"
-    "classes-main classes-main";
-  gap: 1rem;
-}
+  .card {
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "about photograph"
+      "classes-main classes-main";
+    gap: 1rem;
+  }
 
-.about { grid-area: about; }
-.photograph { grid-area: photograph; }
-.classes-main { grid-area: classes-main; }
+  .about { grid-area: about; }
+  .photograph { grid-area: photograph; }
+  .classes-main { grid-area: classes-main; }
 
-.about, .photograph {
-  padding: 10px;
-  margin: 5px;
-  border: 2px solid var(--primaryColor);
-  border-radius: 10px;
-
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-main h2 {
-  text-align: center;
-  margin-bottom: 4px;
-}
+  main h2 {
+    margin-bottom: 4px;
+  }
 }
