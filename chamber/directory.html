@@ -29,27 +29,24 @@
         <link rel="stylesheet" href="styles/timbuktu_large.css" media="print" onload="this.media='all'">
 
 
-
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
         <script src="scripts/timbuktu.js" defer></script>
         <script src="scripts/date.js" defer></script>
      
+      
+        <link rel="preload" href="styles/timbuktu_small.css" as="style">
+        <link rel="stylesheet" href="styles/timbuktu_small.css">
 
-        <link rel="preload" 
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" 
-            as="style">
+        <link rel="preload" href="styles/timbuktu_large.css" as="style">
+        <link rel="stylesheet" href="styles/timbuktu_large.css">
 
-        <link rel="stylesheet" 
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" 
-            media="print" 
-            onload="this.media='all'">
 
     </head>
 <body>
     <header class="site-header">
         <figure class="branding">
-            <a href="home.html"><img src="#" alt="logo" width="50" loading="lazy">
+            <a href="home.html"><img src="/images/logo.png" alt="logo" width="50" height="50">
             <span>Timbuktu Chamber of Commerce</span></a>
         </figure>
 
@@ -63,13 +60,14 @@
         </nav>
     </header>
     <main>
+       
         <figure class="hero">
-            <picture>
-                <source media="(max-width:480px)" srcset="#">
-                <source media="(max-width:860px)" srcset="#">
-                <img src="#" alt="hero img">
-            </picture>
-            <figcaption>Live is being good so far.</figcaption>
+        <picture>
+            <source media="(max-width:480px)" srcset="/images/hero-480.webp">
+            <source media="(max-width:860px)" srcset="/images/hero-860.webp">
+            <img src="/images/hero-1600.webp" alt="hero img" width="1600" height="900" decoding="async" fetchpriority="high">     
+        </picture>
+        <figcaption>Live is being good so far.</figcaption>
         </figure>
 
         <h1>Directory</h1>
@@ -84,25 +82,28 @@
             </div>
         </section>
 
-        <section class="card-weather">
-            <h2>Current Weather</h2>
-            <figure>
-                <img src="images/weather-svgrepo-com.svg" alt="weather logo" width="45" loading="lazy">
-            </figure>
-            <div><ul>
-                <li></li>
-            </ul></div>
+        
+        <section class="card-weather" aria-busy="true">
+        <h2>Current Weather</h2>
+        <figure>
+            <img src="images/weather-svgrepo-com.svg" alt="weather logo" width="45" height="45" loading="lazy">
+        </figure>
+        <div class="weather-list">
+            <ul>
+                <li>Loading...</li>
+            </ul> 
+        </div>
         </section>
 
-        <section class="card-forecast">   
-            <h2>Weather Forecast</h2>
-            <nav><ul>
-                <li></li>
-            </ul></nav>
+        <section class="card-forecast" aria-busy="true">
+        <h2>Weather Forecast</h2>
+        <nav><ul>
+            <li>Loading...</li>
+        </ul></nav>
         </section>
     </div>
 
-        <div id="business" class="card-business"></div>
+        <div id="business" class="card-business" aria-busy="true"></div>
 
     </main>
     <footer class="footer-main">
@@ -115,9 +116,9 @@
         <div class="social-media">
             <nav class="icons">
             <ul>
-                <li><a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="GitHub" width="40" loading="lazy"></a></li>
-                <li><a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn" width="40" loading="lazy"></a></li>
-                <li><a href="https://www.instagram.com/"><img src="images/instagram-logo.svg" alt="Instagram" width="40" loading="lazy"></a></li>
+                <li><a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="GitHub" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram-logo.svg" alt="Instagram" width="40" height="40" loading="lazy"></a></li>
             </ul>
             </nav>
         </div>
