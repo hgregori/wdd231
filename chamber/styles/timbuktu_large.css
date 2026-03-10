@@ -8,9 +8,26 @@
     grid-template-columns: 1fr 0.5fr 0.5fr;
   }
 
-  .card-weather,
-  .card-forecast,
-  .card-business {
-    contain-intrinsic-size: 420px;
+  .nav-toggle { display: none; }
+
+  .navigation {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+
+    width: auto;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
   }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 20px; /* mantém seu estilo original */
+  }
+
 }

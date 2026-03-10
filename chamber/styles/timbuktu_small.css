@@ -127,9 +127,7 @@ img {
 
 .card-weather,
 .card-forecast,
-.card-business {
-  content-visibility: auto;               
-  contain-intrinsic-size: 300px;        
+.card-business {   
   min-height: var(--weather-min);
 }
 .card-forecast { min-height: var(--forecast-min); }
@@ -249,4 +247,88 @@ img {
 .business-card a:focus-visible {
   outline: 2px solid var(--optional-color);
   outline-offset: 2px;
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+.nav-toggle {
+  /* reserva tamanho para evitar CLS */
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  justify-self: end;         /* alinha na coluna direita do header grid */
+  margin-right: 12px;
+
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+
+  /* transições que não causam reflow */
+  transition: background-color .2s ease, color .2s ease, transform .15s ease;
+}
+.nav-toggle:hover { background: rgba(0,0,0,0.06); }
+.nav-toggle:active { transform: translateY(1px); }
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--optional-color);
+  outline-offset: 2px;
+}
+.icon-burger { display: block; }
+
+/* ===== NAV (mobile-first) ===== */
+/* Inicialmente, o menu fica “off-canvas” à direita */
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(80vw, 320px);    /* largura previsível p/ evitar “pulo” */
+  height: 100dvh;
+
+  background: var(--primary-color);
+  padding: 24px 16px;
+
+  /* Camadas e visual */
+  box-shadow: -6px 0 18px rgba(0,0,0,0.15);
+  z-index: 1000;
+
+  /* Estado fechado: fora da tela, invisível, sem clique */
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+
+  /* Transições suaves sem layout */
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+/* Conteúdo interno do menu no mobile */
+.navigation ul {
+  list-style: none;
+  display: grid;              /* empilha itens */
+  gap: 16px;
+  padding: 0;
+  margin-top: 12px;
+}
+.navigation li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  min-height: 44px;           /* alvo de toque e estabilidade de altura */
+}
+
+/* Estado aberto: entra pro viewport */
+.navigation.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Reduz movimento para quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+  .navigation {
+    transition: none;
+  }
+  .nav-toggle {
+    transition: none;
+  }
 }
