@@ -120,9 +120,6 @@ main h1 {
   display: grid;
   gap: 20px;
 }
-.main-content li {
-  list-style-type: none;
-}
 
 .card, .card-event, .card-weather, .card-forecast, .card-business section {
   background-color: var(--card-bg);
@@ -167,7 +164,7 @@ main h1 {
 .footer-main {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: repeat(auto, 1fr); 
   gap: 20px;
   padding: 12px;
 }
@@ -183,6 +180,7 @@ main h1 {
 .company-info {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .social-media .icons ul {

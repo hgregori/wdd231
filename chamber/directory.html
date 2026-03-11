@@ -24,7 +24,9 @@
         <link rel="stylesheet" href="styles/timbuktu_small.css">
         <link rel="stylesheet" href="styles/timbuktu_large.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.media='all'">
 
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
@@ -104,7 +106,7 @@
     </main>
     <footer class="footer-main">
         <div class="company-info">
-            <h3>Contact Us</h3>
+            <p><strong>Contact Us</strong></p>
             <p><strong>Address:</strong> 123 Main Street, Timbuktu, Country</p>
             <p><strong>Phone:</strong> (123) 456-7890</p>
             <p><strong>Email:</strong> <a href="mailto:contact@timbuktu.com">contact@timbuktu.com</a></p>
