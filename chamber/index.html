@@ -33,7 +33,7 @@
         <script src="scripts/navigation.js" defer></script>
 
     </head>
-<body>
+    <body>
     <header class="site-header">
         <figure class="branding">
             <a href="home.html"><img src="images/coconot.svg" alt="logo" width="50" height="50">
@@ -49,7 +49,7 @@
         </ul>
         </nav>
 
-        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false"  aria-label="Toggle navigation menu">
         <svg class="icon-burger" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
@@ -57,51 +57,11 @@
 
     </header>
     <main>
-       
-        <figure class="hero">
-        <picture>
-            <source media="(max-width:860px)" srcset="images/beach_beach_small.jpg" loading="lazy">
-            <img src="images/beach_beach.jpg" alt="hero img" width="1600" height="900" decoding="async" fetchpriority="high" loading="lazy">     
-        </picture>
-        <figcaption>Live is being good so far.</figcaption>
-        </figure>
 
-        <h1>Directory</h1>
 
-     <div class="main-content">
-        <section class="card-event">
-            <h2>Events</h2>
-            <div>
-                <ul>
-                    <li>Festa do Pijaminha</li>
-                </ul>
-            </div>
-        </section>
-
-        
-        <section class="card-weather" aria-busy="true">
-        <h2>Current Weather</h2>
-        <figure>
-            <img src="images/weather-svgrepo-com.svg" alt="weather logo" width="45" height="45" loading="lazy">
-        </figure>
-        <div class="weather-list">
-            <ul>
-                <li>Loading...</li>
-            </ul> 
-        </div>
-        </section>
-
-        <section class="card-forecast" aria-busy="true">
-        <h2>Weather Forecast</h2>
-        <nav><ul>
-            <li>Loading...</li>
-        </ul></nav>
-        </section>
-    </div>
-
-        <div id="business" class="card-business" aria-busy="true"></div>
 
     </main>
+
     <footer class="footer-main">
         <div class="company-info">
             <h3>Contact Us</h3>

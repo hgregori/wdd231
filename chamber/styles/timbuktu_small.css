@@ -33,6 +33,13 @@ img {
   display: block;       
 }
 
+main h1 {
+  font-size: 1.8rem;
+  font-weight: var(--heading-size);
+  color: var(--optional-color);
+  padding: 10px;
+}
+
 .site-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,6 +47,12 @@ img {
   padding: 20px;
   background-color: var(--primary-color);
 }
+
+/* .branding a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
 
 .branding img {
   width: 50px;       
@@ -270,6 +283,7 @@ img {
 }
 .nav-toggle:hover { background: rgba(0,0,0,0.06); }
 .nav-toggle:active { transform: translateY(1px); }
+
 .nav-toggle:focus-visible {
   outline: 2px solid var(--optional-color);
   outline-offset: 2px;
@@ -281,13 +295,11 @@ img {
 .navigation {
   position: fixed;
   top: 0;
-  right: 0;
-  width: min(80vw, 320px);    /* largura previsível p/ evitar “pulo” */
+  right: 0;  /* largura previsível p/ evitar “pulo” */
   height: 100dvh;
 
   background: var(--primary-color);
   padding: 24px 16px;
-
   /* Camadas e visual */
   box-shadow: -6px 0 18px rgba(0,0,0,0.15);
   z-index: 1000;
@@ -303,7 +315,6 @@ img {
 
 /* Conteúdo interno do menu no mobile */
 .navigation ul {
-  list-style: none;
   display: grid;              /* empilha itens */
   gap: 16px;
   padding: 0;
@@ -313,14 +324,13 @@ img {
   display: block;
   padding: 10px 12px;
   border-radius: 8px;
-  min-height: 44px;           /* alvo de toque e estabilidade de altura */
+  min-height: 44px;     
 }
 
 /* Estado aberto: entra pro viewport */
 .navigation.is-open {
   transform: translateX(0);
   opacity: 1;
-  pointer-events: auto;
 }
 
 /* Reduz movimento para quem prefere menos animação */
