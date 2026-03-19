@@ -48,12 +48,6 @@ main h1 {
   background-color: var(--primary-color);
 }
 
-/* .branding a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-} */
-
 .branding img {
   width: 50px;       
   height: 50px;         
@@ -143,23 +137,44 @@ main h1 {
 .card-forecast { min-height: var(--forecast-min); }
 .card-business { min-height: var(--business-min); }
 
+/* WEATHER CARDS */
+
 .card-weather {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: auto 1fr;
   gap: 7px;
 }
 
+.card-weather li {
+  list-style: none;
+  padding: 6px;
+  margin: 5px 0;
+}
+
+.weather-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* EVENT CARDS */
+
+.event-item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  
+}
+
+/* FORECAST CARDS */
+
 .card-forecast {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: auto 1fr;
   gap: 20px;
 }
 
-.card-business section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-}
+/* FOOTER */
 
 .footer-main {
   background-color: var(--primary-color);
@@ -196,7 +211,9 @@ main h1 {
   align-items: center;
 }
 
-.business-card {
+/* BUSINESS CARDS */
+
+.card-business {
   background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: var(--shadows);
@@ -204,22 +221,32 @@ main h1 {
   margin: 20px;
 
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
   gap: 12px;
   align-items: center;
 }
 
-.business-card:not(:has(.business-logo)) {
-  grid-template-columns: 1fr;
+.card-business section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.business-logo {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-  background: #fff;
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-business img {
+  width: 60%;
+  height: 160px;
+  margin: auto;
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.08);
+}
+
+.business-card:not(:has(.business-logo)) {
+  grid-template-columns: 1fr;
 }
 
 .business-card h2 {

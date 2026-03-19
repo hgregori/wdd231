@@ -1,4 +1,6 @@
 const business = document.querySelector("#business");
+const randomNumber = Math.floor(Math.random() * 3) + 1;
+console.log(`Random number between 1 and 3: ${randomNumber}`);
 
 async function getBusiness() {
     try {
@@ -9,9 +11,9 @@ async function getBusiness() {
         }
 
         const data = await response.json();
-
+ 
         for (let bus of data) {
-            if (bus.membershipLevel === 3) { // Only display Gold members
+            if (bus.membershipLevel === randomNumber) { // Only display Gold members
                 displayBusiness(bus);
                 await delay(300);
             }
@@ -30,6 +32,9 @@ function displayBusiness(bus) {
     const card = document.createElement("section");
     card.classList.add("business-card");
     
+    const div = document.createElement("div");
+    div.classList.add("company-info");
+    card.appendChild(div);
     const name = document.createElement("h2");
     const address = document.createElement("p");
     const phone = document.createElement("p");
@@ -64,16 +69,15 @@ function displayBusiness(bus) {
     linkedin.setAttribute("href", bus.social.linkedin);
     linkedin.setAttribute("target", "_blank");
 
-    card.appendChild(name);
-    card.appendChild(img);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
-    card.appendChild(membership);
-    card.appendChild(linkedin);
+    div.appendChild(name);
+    div.appendChild(img);
+    div.appendChild(address);
+    div.appendChild(phone);
+    div.appendChild(website);
+    div.appendChild(membership);
+    div.appendChild(linkedin);
     
     business.appendChild(card);
 }
 
 getBusiness();
-``

@@ -80,14 +80,14 @@ x
         <!-- Weather Section -->
 
         <section class="card-weather" aria-busy="true">
+        <div class="weather-heading">
         <h2>Current Weather</h2>
         <figure>
             <img src="images/weather-svgrepo-com.svg" alt="weather logo" width="45" height="45" loading="lazy">
         </figure>
-        <div class="weather-list">
-            <ul>
-                <li>Loading...</li>
-            </ul> 
+        </div>
+        <div id="weatherList" class="weather-list">
+             
         </div>
         </section>
 
@@ -95,9 +95,10 @@ x
 
         <section class="card-forecast" aria-busy="true">
         <h2>Weather Forecast</h2>
-        <nav><ul>
-            <li>Loading...</li>
-        </ul></nav>
+        
+        <div id="forecastList" class="forecast-list">
+        
+        </div>
         </section>
     </div>
 

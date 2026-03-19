@@ -23,6 +23,7 @@ async function fetchEvents() {
 
 function displayEvents(event, ulElement) {
     const li = document.createElement('li');
+    li.classList.add('event-item');
     li.textContent = `${event.date} - ${event.name}`;
     ulElement.appendChild(li);
 }
