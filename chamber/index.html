@@ -8,7 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Directory | Timbuktu Chamber of Commerce</title>
+        <title> Home | Timbuktu Chamber of Commerce</title>
         <meta name="author" content="Henrique Gregorio">
         <meta name="description" content="A web page where you can find more information about the local commerce and create a larger network with other entrepenuers.">
 
@@ -24,16 +24,19 @@
         <link rel="stylesheet" href="styles/timbuktu_small.css">
         <link rel="stylesheet" href="styles/timbuktu_large.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.media='all'">
 
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-
-        <script src="scripts/timbuktu.js" defer></script>
+x   
         <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/premiun.js"defer></script>
+        <script src="scripts/events.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
 
     </head>
-    <body>
+<body>
     <header class="site-header">
         <figure class="branding">
             <a href="home.html"><img src="images/coconot.svg" alt="logo" width="50" height="50">
@@ -48,20 +51,61 @@
             <li class="others"><a href="join.html">Join</a></li>
         </ul>
         </nav>
-
-        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false"  aria-label="Toggle navigation menu">
-        <svg class="icon-burger" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+      
+        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+            <svg class="icon-burger" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="label">Menu</span>
         </button>
 
     </header>
+    
+    <!-- MAIN SECTION -->
+    
     <main>
+        
+        <img src="images/hero_mt_kilimanjaro.jpg" alt="hero-img">
+        <h1>Homepage</h1>
+          <div class="main-content">
+        <section class="card-event">
 
+            <!-- Events Section -->
 
+            <h2>Events</h2>
+            <div id="events" class="events-list" aria-busy="true">
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+
+        <section class="card-weather" aria-busy="true">
+        <h2>Current Weather</h2>
+        <figure>
+            <img src="images/weather-svgrepo-com.svg" alt="weather logo" width="45" height="45" loading="lazy">
+        </figure>
+        <div class="weather-list">
+            <ul>
+                <li>Loading...</li>
+            </ul> 
+        </div>
+        </section>
+
+        <!-- Weather Forecast Section -->
+
+        <section class="card-forecast" aria-busy="true">
+        <h2>Weather Forecast</h2>
+        <nav><ul>
+            <li>Loading...</li>
+        </ul></nav>
+        </section>
+    </div>
+
+    <!-- Business card Section -->
+
+    <div id="business" class="card-business" aria-busy="true"></div>
 
     </main>
-
     <footer class="footer-main">
         <div class="company-info">
             <p><strong>Contact Us</strong></p>

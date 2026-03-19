@@ -1,16 +1,14 @@
 [
   {
-    "companyName": "Itaú Unibanco",
-    "companyAddresses": [
+    "company": "Itaú Unibanco",
+    "addresses": [
       "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://www.itau.com.br",
-    "imageFileName": "../images/itau-og.webp",
+    "phoneNumber": null,
+    "website": "https://www.itau.com.br",
+    "image": "images/itau.png",
     "membershipLevel": 3,
     "industry": "Banking",
-    "foundedYear": 2008,
-    "employeeCount": null,
     "hours": {
       "monday": "10:00-16:00",
       "tuesday": "10:00-16:00",
@@ -27,17 +25,15 @@
     "description": "Um dos maiores bancos da América Latina, com foco em varejo, corporate e investimentos."
   },
   {
-    "companyName": "Bradesco",
-    "companyAddresses": [
+    "company": "Bradesco",
+    "addresses": [
       "Osasco, SP, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://banco.bradesco",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/bradesco-og.webp",
+    "phoneNumber": null,
+    "website": "https://banco.bradesco",
+    "image": "images/bradesco.jpg",
     "membershipLevel": 3,
     "industry": "Banking",
-    "foundedYear": 1943,
-    "employeeCount": null,
     "hours": {
       "monday": "10:00-16:00",
       "tuesday": "10:00-16:00",
@@ -54,17 +50,15 @@
     "description": "Banco brasileiro de grande porte com presença nacional e ampla oferta de serviços financeiros."
   },
   {
-    "companyName": "Banco do Brasil",
-    "companyAddresses": [
+    "company": "Banco do Brasil",
+    "addresses": [
       "Brasília, DF, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://www.bb.com.br",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/banco-do-brasil-og.webp",
+    "phoneNumber": null,
+    "website": "https://www.bb.com.br",
+    "image": "images/bb.jpg",
     "membershipLevel": 3,
     "industry": "Banking",
-    "foundedYear": 1808,
-    "employeeCount": null,
     "hours": {
       "monday": "10:00-16:00",
       "tuesday": "10:00-16:00",
@@ -81,17 +75,15 @@
     "description": "Instituição financeira pública com serviços para pessoas físicas, jurídicas e governo."
   },
   {
-    "companyName": "Santander Brasil",
-    "companyAddresses": [
+    "company": "Santander Brasil",
+    "addresses": [
       "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://www.santander.com.br",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/santander-brasil-og.webp",
-    "membershipLevel": 3,
+    "phoneNumber": null,
+    "website": "https://www.santander.com.br",
+    "image": "images/santander.jpg",
+    "membershipLevel": 2,
     "industry": "Banking",
-    "foundedYear": 1982,
-    "employeeCount": null,
     "hours": {
       "monday": "10:00-16:00",
       "tuesday": "10:00-16:00",
@@ -108,17 +100,15 @@
     "description": "Subsidiária do Grupo Santander, com forte atuação em varejo, empresas e corporate no Brasil."
   },
   {
-    "companyName": "Caixa Econômica Federal",
-    "companyAddresses": [
+    "company": "Caixa Econômica Federal",
+    "addresses": [
       "Brasília, DF, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://www.caixa.gov.br",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/caixa-og.webp",
+    "phoneNumber": null,
+    "website": "https://www.caixa.gov.br",
+    "image": "images/caixa.png",
     "membershipLevel": 2,
     "industry": "Banking",
-    "foundedYear": 1861,
-    "employeeCount": null,
     "hours": {
       "monday": "10:00-16:00",
       "tuesday": "10:00-16:00",
@@ -135,17 +125,15 @@
     "description": "Banco público com foco em habitação, programas sociais e serviços bancários para a população."
   },
   {
-    "companyName": "BTG Pactual",
-    "companyAddresses": [
+    "company": "BTG Pactual",
+    "addresses": [
       "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://www.btgpactual.com",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/btg-pactual-og.webp",
+    "phoneNumber": null,
+    "website": "https://www.btgpactual.com",
+    "image": "images/btg.png",
     "membershipLevel": 2,
     "industry": "Investment Banking",
-    "foundedYear": 1983,
-    "employeeCount": null,
     "hours": {
       "monday": "09:00-18:00",
       "tuesday": "09:00-18:00",
@@ -162,17 +150,15 @@
     "description": "Banco de investimentos e gestor de ativos com atuação global."
   },
   {
-    "companyName": "Nubank",
-    "companyAddresses": [
+    "company": "Nubank",
+    "addresses": [
       "São Paulo, SP, Brazil"
     ],
-    "companyPhoneNumber": null,
-    "companyWebsiteUrl": "https://nubank.com.br",
-    "imageFileName": "https://SEU-DOMINIO/SEU_REPO/images/nubank-og.webp",
+    "phoneNumber": null,
+    "website": "https://nubank.com.br",
+    "image": "images/nubank.jpg",
     "membershipLevel": 1,
-    "industry": "Digital Banking / Fintech",
-    "foundedYear": 2013,
-    "employeeCount": null,
+    "industry": "Digital Banking / Fintech",    
     "hours": {
       "monday": "24h",
       "tuesday": "24h",

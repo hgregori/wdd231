@@ -11,8 +11,10 @@ async function getBusiness() {
         const data = await response.json();
 
         for (let bus of data) {
-            displayBusiness(bus);
-            await delay(300);
+            if (bus.membershipLevel === 3) { // Only display Gold members
+                displayBusiness(bus);
+                await delay(300);
+            }
         }
 
     } catch (error) {
