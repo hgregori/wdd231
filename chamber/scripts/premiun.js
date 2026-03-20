@@ -1,6 +1,6 @@
 const business = document.querySelector("#business");
-const randomNumber = Math.floor(Math.random() * 3) + 1;
-console.log(`Random number between 1 and 3: ${randomNumber}`);
+let randomNumber = Math.floor(Math.random() * 3) + 1;
+
 
 async function getBusiness() {
     try {
@@ -11,7 +11,9 @@ async function getBusiness() {
         }
 
         const data = await response.json();
- 
+        if (randomNumber === 1) {
+            randomNumber = 2;
+        }
         for (let bus of data) {
             if (bus.membershipLevel === randomNumber) { // Only display Gold members
                 displayBusiness(bus);
