@@ -1,5 +1,5 @@
 const bronzeBttn = document.getElementById('bronze-button');
-const bronzeModal = document.getElementById('bronze');
+const bronzeModal = document.getElementById('bronzeDialog');
 const bronzeClose = document.getElementById('close-bronze');
 
 bronzeBttn.addEventListener('click', () => {
@@ -11,7 +11,7 @@ bronzeClose.addEventListener('click', () => {
 });
 
 const silverBttn = document.getElementById('silver-button');
-const silverModal = document.getElementById('silver');
+const silverModal = document.getElementById('silverDialog');
 const silverClose = document.getElementById('close-silver');
 
 silverBttn.addEventListener('click', () => {
@@ -23,7 +23,7 @@ silverClose.addEventListener('click', () => {
 });
 
 const goldBttn = document.getElementById('gold-button');
-const goldModal = document.getElementById('gold');
+const goldModal = document.getElementById('goldDialog');
 const goldClose = document.getElementById('close-gold');
 
 goldBttn.addEventListener('click', () => {
@@ -35,7 +35,7 @@ goldClose.addEventListener('click', () => {
 });
 
 const noneBttn = document.getElementById('none-button');
-const noneModal = document.getElementById('none');
+const noneModal = document.getElementById('noneDialog');
 const noneClose = document.getElementById('close-none');
 
 noneBttn.addEventListener('click', () => {

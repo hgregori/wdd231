@@ -614,3 +614,11 @@ dialog button:active {
   background: var(--optional-color);
   transform: scale(1.03);
 } 
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: var(--heading-size);
+  color: var(--optional-color);
+  padding: 10px;
+  text-align: center;
+}
