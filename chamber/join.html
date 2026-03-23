@@ -62,22 +62,22 @@
     <main>
         <h2>Join the Timbuktu Chamber of Commerce</h2>
         <p>Fill out the form below to become a member of our chamber.</p>
-
+        <div class="forms">
         <form action="thankyou.html" method="get" class="join-form">
             <label for="name">First Name:</label>
-            <input type="text" id="name" name="name" required autocomplete="given-name">
+            <input type="text" id="name" name="name" autocomplete="given-name" title="Write your first name" required>
 
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required autocomplete="family-name">
+            <input type="text" id="lname" name="lname" autocomplete="family-name" title="Write your last name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@example.com">
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" title="Enter a valid email address" required>
 
             <label for="business">Business Name:</label>
-            <input type="text" id="business" name="business" required pattern="[A-Za-z\s\-]{7,}" title="At least 7 letters, spaces, or hyphens">
+            <input type="text" id="business" name="business" required pattern="[A-Za-z\s\-]{7,}" title="At least 7 letters, spaces, or hyphens" required>
             
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter a valid phone number" required>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
@@ -151,11 +151,13 @@
                     <p>As a member of the Timbuktu Chamber of Commerce, you will enjoy exclusive benefits such as networking opportunities, business resources, and community events.</p>
                     <ul>
                         <li>Access to networking events</li>
+                        <li>No fees</li>
                     </ul>
                     <button id="close-none">Close</button>
                 </dialog>
             </div>
         </section>
+        </div>
 
     </main>
     <footer class="footer-main">
