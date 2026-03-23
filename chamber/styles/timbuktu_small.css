@@ -36,7 +36,7 @@ img {
 h2 {
   font-size: 1.4rem;
   font-weight: var(--heading-size);
-  color: var(--primary-color);
+  color: var(--optional-color);
   text-align: center;
   margin: 10px 0;
 }

@@ -74,13 +74,13 @@
             <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" title="Enter a valid email address" required>
 
             <label for="business">Organization Title:</label>
-            <input type="text" id="business" name="business" pattern="[A-Za-z\s\-]{7,}" title="At least 7 letters, spaces, or hyphens" autocomplete="organization" required>
-            
+            <input type="text" id="business" name="business" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" title="At least 7 letters, spaces, or hyphens" required>
+
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter a valid phone number" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" title="description for you business"></textarea>
 
         <fieldset>
             <legend>Membership Type</legend>
