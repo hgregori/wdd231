@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> Join | Timbuktu Chamber of Commerce</title>
+        <meta name="author" content="Henrique Gregorio">
+        <meta name="description" content="A web page where you can find more information about the local commerce and create a larger network with other entrepenuers.">
+
+        <link rel="canonical" href="https://SEU-DOMINIO/directory.html">
+        <meta property="og:title" content="Timbuktu Chamber Directory – Find Local Businesses">
+        <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce directory to discover services, connect with owners, and strengthen your business network.">
+        <meta property="og:image" content="https://hgregori.github.io/wdd231/chamber/beach_beach.jpg">
+        <meta property="og:url" content="https://hgregori.github.io/wdd231/chamber/directory.html">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+
+        <link rel="stylesheet" href="styles/timbuktu_small.css">
+        <link rel="stylesheet" href="styles/timbuktu_large.css">
+
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.media='all'">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/modals.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+
+    </head>
+    <body>
+    <header class="site-header">
+        <figure class="branding">
+            <a href="home.html"><img src="images/coconot.svg" alt="logo" width="50" height="50">
+            <span>Timbuktu Chamber of Commerce</span></a>
+        </figure>
+       
+        <nav id="primaryNav" class="navigation">
+        <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="others"><a href="discover.html">Discover</a></li>
+            <li class="others"><a href="directory.html">Directory</a></li>
+            <li class="others"><a href="join.html">Join</a></li>
+        </ul>
+        </nav>
+      
+        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+            <svg class="icon-burger" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="label">Menu</span>
+        </button>
+    </header>
+    
+    <!-- MAIN SECTION -->
+    
+    <main>
+        <h2>Join the Timbuktu Chamber of Commerce</h2>
+        <p>Fill out the form below to become a member of our chamber.</p>
+
+        <form action="thankyou.html" method="get" class="join-form">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required autocomplete="given-name">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required autocomplete="family-name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@example.com">
+
+            <label for="business">Business Name:</label>
+            <input type="text" id="business" name="business" required pattern="[A-Za-z\s\-]{7,}" title="At least 7 letters, spaces, or hyphens">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+        <fieldset>
+            <legend>Membership Type</legend>
+            <label for="bronze">
+                <input type="radio" id="bronze" name="membership" value="bronze" required>
+                Bronze
+            </label>
+            <label for="silver">
+                <input type="radio" id="silver" name="membership" value="silver">
+                Silver
+            </label>
+            <label for="gold">
+                <input type="radio" id="gold" name="membership" value="gold">
+                Gold
+            </label>
+               <label for="np">
+                <input type="radio" id="np" name="membership" value="np">
+                None (NP)
+            </label>
+        </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button id="submit-button" type="submit">Submit</button>
+        </form>
+
+        <section>
+            <h2>Membership Information</h2>
+            <p>Thank you for your interest in joining the Timbuktu Chamber of Commerce. Please fill out the form above to submit your application.</p>
+            
+            <div id="membership" class="membership">
+                <button id="bronze-button">Bronze</button>
+                <button id="silver-button">Silver</button>
+                <button id="gold-button">Gold</button>
+                <button id="none-button">None (NP)</button>
+
+                <dialog id="bronze">
+                    <h2>Bronze Member Benefits</h2>
+                    <p>As a member of the Timbuktu Chamber of Commerce, you will enjoy exclusive benefits such as networking opportunities, business resources, and community events.</p>
+                    <ul>
+                        <li>Access to networking events</li>
+                        <li>Business resource directory</li>
+                    </ul>
+                    <button id="close-bronze">Close</button>
+                </dialog>
+                <dialog id="silver">
+                    <h2>Silver Member Benefits</h2>
+                    <p>As a member of the Timbuktu Chamber of Commerce, you will enjoy exclusive benefits such as networking opportunities, business resources, and community events.</p>
+                    <ul>
+                        <li>Access to networking events</li>
+                        <li>Business resource directory</li>
+                        <li>Community event invitations</li>
+                    </ul>
+                    <button id="close-silver">Close</button>
+                </dialog>
+                <dialog id="gold">
+                    <h2>Gold Member Benefits</h2>
+                    <p>As a member of the Timbuktu Chamber of Commerce, you will enjoy exclusive benefits such as networking opportunities, business resources, and community events.</p>
+                    <ul>
+                        <li>Access to networking events</li>
+                        <li>Business resource directory</li>
+                        <li>Community event invitations</li>
+                        <li>Priority customer service</li>
+                    </ul>
+                    <button id="close-gold">Close</button>
+                </dialog>
+                <dialog id="none">
+                    <h2>None (NP) Member Benefits</h2>
+                    <p>As a member of the Timbuktu Chamber of Commerce, you will enjoy exclusive benefits such as networking opportunities, business resources, and community events.</p>
+                    <ul>
+                        <li>Access to networking events</li>
+                    </ul>
+                    <button id="close-none">Close</button>
+                </dialog>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer-main">
+        <div class="company-info">
+            <p><strong>Contact Us</strong></p>
+            <p><strong>Address:</strong> 123 Main Street, Timbuktu, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@timbuktu.com">contact@timbuktu.com</a></p>
+        </div>
+        <div class="social-media">
+            <nav class="icons">
+            <ul>
+                <li><a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="GitHub" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram-logo.svg" alt="Instagram" width="40" height="40" loading="lazy"></a></li>
+            </ul>
+            </nav>
+        </div>
+        
+        <div class="footer-rights">
+            <div class="rights">
+                <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
+                <p id="lastModified" class="lastmod"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

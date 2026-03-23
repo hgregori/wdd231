@@ -14,7 +14,7 @@
   --shadows: 0 2px 8px rgba(0, 0, 0, 0.15);
   --heading-size: 900;
   --card-bg: rgb(245, 237, 237);
-  --hero-ratio: 16/9;           
+  --hero-ratio: 16/9;
   --weather-min: 180px;
   --forecast-min: 200px;
   --business-min: 220px;
@@ -30,9 +30,24 @@ html, body {
 img {
   max-width: 100%;
   height: auto;
-  display: block;       
+  display: block;
 }
 
+h2 {
+  font-size: 1.4rem;
+  font-weight: var(--heading-size);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* MAIN HEADER */
 main h1 {
   font-size: 1.8rem;
   font-weight: var(--heading-size);
@@ -43,21 +58,24 @@ main h1 {
 .site-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;          
+  align-items: center;
   padding: 20px;
   background-color: var(--primary-color);
 }
 
 .branding img {
-  width: 50px;       
-  height: 50px;         
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
-.branding a, .navigation a {
-  color: black;
+
+.branding a,
+.navigation a {
   text-decoration: none;
+  color: white;
 }
 
+/* NAVIGATION */
 .navigation ul {
   list-style: none;
   display: flex;
@@ -67,7 +85,6 @@ main h1 {
 }
 
 .navigation a {
-  text-decoration: none;
   color: var(--font-color);
   padding: 6px 10px;
   border-radius: 5px;
@@ -82,7 +99,7 @@ main h1 {
 }
 
 .navigation .others a {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
 }
 
@@ -92,22 +109,25 @@ main h1 {
 }
 
 .navigation .home a:hover {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
 }
 
+/* HERO */
 .hero {
   aspect-ratio: var(--hero-ratio);
   width: 100%;
   overflow: clip;
-  background: #f2f2f2; 
+  background: #f2f2f2;
 }
+
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* MAIN GRID */
 .main-content {
   padding: 20px;
   margin: 0 auto;
@@ -115,7 +135,12 @@ main h1 {
   gap: 20px;
 }
 
-.card, .card-event, .card-weather, .card-forecast, .card-business section {
+/* CARDS */
+.card,
+.card-event,
+.card-weather,
+.card-forecast,
+.card-business section {
   background-color: var(--card-bg);
   padding: 20px;
   border-radius: 10px;
@@ -123,22 +148,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-.card-event {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 7px;
-}
-
-.card-weather,
-.card-forecast,
-.card-business {   
-  min-height: var(--weather-min);
-}
-.card-forecast { min-height: var(--forecast-min); }
-.card-business { min-height: var(--business-min); }
-
-/* WEATHER CARDS */
-
+.card-event,
 .card-weather {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -157,16 +167,11 @@ main h1 {
   gap: 12px;
 }
 
-/* EVENT CARDS */
-
 .event-item {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  
 }
-
-/* FORECAST CARDS */
 
 .card-forecast {
   display: grid;
@@ -181,11 +186,9 @@ main h1 {
 }
 
 /* FOOTER */
-
 .footer-main {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 1fr; 
   gap: 20px;
   padding: 12px;
 }
@@ -202,6 +205,7 @@ main h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 8px;
 }
 
 .social-media .icons ul {
@@ -218,14 +222,12 @@ main h1 {
 }
 
 /* BUSINESS CARDS */
-
 .card-business {
   background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: var(--shadows);
   padding: 16px;
   margin: 20px;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 12px;
@@ -238,21 +240,12 @@ main h1 {
   gap: 10px;
 }
 
-.company-info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
 .card-business img {
   width: 60%;
   height: 160px;
   margin: auto;
   border-radius: 8px;
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.business-card:not(:has(.business-logo)) {
-  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .business-card h2 {
@@ -269,16 +262,23 @@ main h1 {
 .business-card a {
   text-decoration: none;
   color: #0b3d5c;
-  background: rgba(0,0,0,0.06);
+  background: rgba(0, 0, 0, 0.06);
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 0.9rem;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   transition: background-color .25s ease, color .25s ease, transform .2s ease;
 }
 
-.business-card a:hover { background: aliceblue; color: black; }
-.business-card a:active { transform: translateY(1px); }
+.business-card a:hover {
+  background: aliceblue;
+  color: black;
+}
+
+.business-card a:active {
+  transform: translateY(1px);
+}
+
 .business-card a[href*="http"]:first-of-type {
   background: var(--secondary-color);
   color: black;
@@ -293,83 +293,266 @@ main h1 {
   outline-offset: 2px;
 }
 
-/* ===== HAMBURGER BUTTON ===== */
+/* HAMBURGER BUTTON */
 .nav-toggle {
-  /* reserva tamanho para evitar CLS */
   width: 44px;
   height: 44px;
   display: inline-grid;
   place-items: center;
-  justify-self: end;         /* alinha na coluna direita do header grid */
+  justify-self: end;
   margin-right: 12px;
-
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  color: #000;
   cursor: pointer;
-
-  /* transições que não causam reflow */
   transition: background-color .2s ease, color .2s ease, transform .15s ease;
 }
-.nav-toggle:hover { background: rgba(0,0,0,0.06); }
-.nav-toggle:active { transform: translateY(1px); }
+
+.nav-toggle:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.nav-toggle:active {
+  transform: translateY(1px);
+}
 
 .nav-toggle:focus-visible {
   outline: 2px solid var(--optional-color);
   outline-offset: 2px;
 }
-.icon-burger { display: block; }
 
-/* ===== NAV (mobile-first) ===== */
-/* Inicialmente, o menu fica “off-canvas” à direita */
+.icon-burger {
+  display: block;
+}
+
+/* MOBILE NAVIGATION */
 .navigation {
   position: fixed;
   top: 0;
-  right: 0;  /* largura previsível p/ evitar “pulo” */
+  right: 0;
   height: 100dvh;
-
   background: var(--primary-color);
   padding: 24px 16px;
-  /* Camadas e visual */
-  box-shadow: -6px 0 18px rgba(0,0,0,0.15);
+  box-shadow: -6px 0 18px rgba(0, 0, 0, 0.15);
   z-index: 1000;
-
-  /* Estado fechado: fora da tela, invisível, sem clique */
   transform: translateX(100%);
   opacity: 0;
   pointer-events: none;
-
-  /* Transições suaves sem layout */
   transition: transform .25s ease, opacity .25s ease;
 }
 
-/* Conteúdo interno do menu no mobile */
 .navigation ul {
-  display: grid;              /* empilha itens */
+  display: grid;
   gap: 16px;
   padding: 0;
   margin-top: 12px;
 }
+
 .navigation li a {
   display: block;
   padding: 10px 12px;
   border-radius: 8px;
-  min-height: 44px;     
+  min-height: 44px;
 }
 
-/* Estado aberto: entra pro viewport */
 .navigation.is-open {
   transform: translateX(0);
   opacity: 1;
 }
 
-/* Reduz movimento para quem prefere menos animação */
 @media (prefers-reduced-motion: reduce) {
-  .navigation {
-    transition: none;
-  }
+  .navigation,
   .nav-toggle {
     transition: none;
   }
+}
+
+/* MEMBERSHIP BUTTON SECTION */
+.membership {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px auto;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadows);
+  max-width: 700px;
+}
+
+.membership button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadows);
+  transition: background .25s ease, transform .15s ease;
+  min-width: 120px;
+}
+
+.membership button:hover {
+  background: var(--optional-color);
+  transform: scale(1.05);
+}
+
+.membership button:active {
+  transform: scale(0.97);
+}
+
+/* MODAL (DIALOG) */
+dialog {
+  border: none;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 450px;
+  width: 90%;
+  background: var(--card-bg);
+  color: var(--font-color);
+  box-shadow: var(--shadows);
+  margin: auto;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+dialog h2 {
+  font-size: 1.5rem;
+  font-weight: var(--heading-size);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+dialog p {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+
+dialog ul {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+dialog li {
+  margin-bottom: 0.4rem;
+}
+
+dialog button {
+  display: block;
+  margin: 0.5rem auto 0;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+dialog button:hover {
+  background: var(--optional-color);
+  transform: scale(1.05);
+}
+
+dialog button:active {
+  transform: scale(0.97);
+}
+
+/* JOIN FORM */
+.join-form {
+  background: var(--card-bg);
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadows);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.join-form label {
+  font-weight: 600;
+  color: var(--optional-color);
+}
+
+.join-form input,
+.join-form textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(84, 121, 153, 0.3);
+}
+
+.join-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.join-form fieldset {
+  border: 2px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.join-form legend {
+  padding: 0 8px;
+  color: var(--optional-color);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.join-form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+#submit-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background .25s ease, transform .15s ease;
+}
+
+#submit-button:hover {
+  background: var(--optional-color);
+  transform: scale(1.03);
+}
+
+#submit-button:active {
+  transform: scale(0.97);
 }
