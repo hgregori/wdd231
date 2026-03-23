@@ -73,8 +73,11 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" title="Enter a valid email address" required>
 
-            <label for="business">Organization Title:</label>
-            <input type="text" id="business" name="business" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" title="At least 7 letters, spaces, or hyphens" required>
+            <label for="business">Business-Name:</label>
+            <input type="text" id="business" name="business" autocomplete="organization" title="Business Name" required>    
+
+            <label for="organization-title">Organization Title:</label>
+            <input type="text" id="organization-title" name="organization-title" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" title="At least 7 letters, spaces, or hyphens" required>
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter a valid phone number" required>
