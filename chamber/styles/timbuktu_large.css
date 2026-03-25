@@ -1,4 +1,4 @@
-@media (min-width: 820px) {
+@media (min-width: 1025px) {
   .footer-main {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -42,4 +42,28 @@
     margin: 10px;
     padding: 10px;
   }
+
+  .local-business {
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.business-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-areas: "heading heading" "image info" "link link";
+  gap: 12px;
+}
+
+.business-card img {
+  max-width: 300px;
+  max-height: auto;
+}
+
+.business-card a {
+    width: 100%;
+}
 }

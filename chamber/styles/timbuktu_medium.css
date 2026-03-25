@@ -1,4 +1,18 @@
-@media (min-width: 540px) and (max-width: 819px) {
+@media (min-width: 641px) and (max-width: 1024px) {
+.business-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-areas: "heading heading" "image info" "link link";
+  gap: 12px;
+}
 
+.business-card img {
+  max-width: 280px;
+  max-height: auto;
+}
 
+.business-card a {
+    width: 100%;
+}
 }

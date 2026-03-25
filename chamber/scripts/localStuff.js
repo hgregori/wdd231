@@ -27,13 +27,17 @@ function displayData(item) {
     img.setAttribute("loading", "lazy");
     card.appendChild(img);
 
+    const div = document.createElement("div");
+    div.classList.add("business-info");
+    card.appendChild(div);
+    
     const address = document.createElement("p");
-    address.textContent = item.address;
-    card.appendChild(address);
+    address.innerHTML = `<strong>Address:</strong> ${item.address}`;
+    div.appendChild(address);
 
     const description = document.createElement("p");
-    description.textContent = item.description;
-    card.appendChild(description);
+    description.innerHTML = `<strong>Description:</strong> ${item.description}`;
+    div.appendChild(description);
 
     const button = document.createElement("a");
     button.textContent = "Learn more";
