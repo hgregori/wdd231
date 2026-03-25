@@ -16,3 +16,11 @@
     width: 100%;
 }
 }
+
+@media (min-width: 768px) {
+  .business-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+    transition: transform .3s ease, filter .3s ease;
+  }
+}   

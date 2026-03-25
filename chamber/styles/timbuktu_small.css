@@ -680,3 +680,14 @@ h1 {
   grid-area: info;
 }
 
+.visit-message {
+  padding: 12px;
+  margin: 20px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadows);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--optional-color);
+}
