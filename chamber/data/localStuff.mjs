@@ -1,4 +1,4 @@
-[
+export const myData = [
     {
         "name": "Catedral Santo Antonio",
         "address": "Rua Vitoria Regia",
@@ -47,4 +47,4 @@
         "img": "images/parque_chico_mendes.webp",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate."
     }
-]
+];
