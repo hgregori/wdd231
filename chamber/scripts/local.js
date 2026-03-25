@@ -1,4 +1,4 @@
-import { myData } from '../data/localStuff.mjs';
+import { myData } from '../data/local.mjs';
 
 console.log(myData);
 
@@ -39,11 +39,12 @@ function displayData(item) {
     description.innerHTML = `<strong>Description:</strong> ${item.description}`;
     div.appendChild(description);
 
-    const button = document.createElement("a");
-    button.textContent = "Learn more";
-    button.setAttribute("href", item.about);
-    button.setAttribute("target", "_blank");
+    
+    const button = document.createElement("button");
     button.classList.add("visit-button");
+    button.textContent = "Learn More";
+    button.onclick = () => window.open(item.about, "_blank");
+
     card.appendChild(button);
 }
 

@@ -650,24 +650,45 @@ h1 {
   grid-area: heading;
 }
 
-
 .business-card img {
   max-width: 200px;
-  max-height: auto;
+  height: auto;
   border-radius: 6px;
-  border: black 1px solid rgba(0, 0, 0, 0.8);
-  margin: auto ;
-
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: auto;
   grid-area: image;
 }
 
-.business-card a {
+.visit-button {
+  display: inline-block;
   text-align: center;
-  max-width: 300px;
-  margin: 0 auto;
+  padding: 12px 20px;
+  background: var(--secondary-color);
+  color: black;
+  font-weight: 600;
   text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: background .25s ease, transform .15s ease, border-color .25s ease;
+  max-width: 260px;
+  margin: 0 auto;
 
   grid-area: link;
+}
+
+.visit-button:hover {
+  background: #ffd17e;
+  transform: scale(1.05);
+  border-color: var(--optional-color);
+}
+
+.visit-button:active {
+  transform: scale(0.97);
+}
+
+.visit-button:focus-visible {
+  outline: 3px solid var(--optional-color);
+  outline-offset: 4px;
 }
 
 .business-info {

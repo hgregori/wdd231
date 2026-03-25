@@ -60,7 +60,7 @@
 
 .business-card img {
   max-width: 300px;
-  max-height: auto;
+  height: auto;
 }
 
 .business-card a {
