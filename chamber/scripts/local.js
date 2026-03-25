@@ -49,21 +49,16 @@ function displayData(item) {
 
 init();
 
-// Select the paragraph where the message will appear
 const visitMessage = document.getElementById("visit-message");
 
-// Current timestamp in milliseconds
 const now = Date.now();
 
-// Get previous visit from localStorage
 const lastVisit = Number(localStorage.getItem("lastVisit"));
 
-// CASE 1 → First visit ever
 if (!lastVisit) {
     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
 }
 
-// CASE 2 → User has visited before
 else {
     const difference = now - lastVisit;
     const daysBetween = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -77,5 +72,4 @@ else {
     }
 }
 
-// Save current visit date for next time
 localStorage.setItem("lastVisit", now);
