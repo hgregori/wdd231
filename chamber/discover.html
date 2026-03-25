@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> Home | Timbuktu Chamber of Commerce</title>
+        <meta name="author" content="Henrique Gregorio">
+        <meta name="description" content="A web page where you can find more information about the local commerce and create a larger network with other entrepenuers.">
+
+        <link rel="canonical" href="https://SEU-DOMINIO/directory.html">
+        <meta property="og:title" content="Timbuktu Chamber Directory – Find Local Businesses">
+        <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce directory to discover services, connect with owners, and strengthen your business network.">
+        <meta property="og:image" content="https://hgregori.github.io/wdd231/chamber/beach_beach.jpg">
+        <meta property="og:url" content="https://hgregori.github.io/wdd231/chamber/directory.html">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+
+        <link rel="stylesheet" href="styles/timbuktu_small.css">
+        <link rel="stylesheet" href="styles/timbuktu_large.css">
+        <link rel="stylesheet" href="styles/timbuktu_medium.css">
+
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" media="print" onload="this.media='all'">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/premiun.js" defer></script>
+        <script src="scripts/events.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+    </head>
+    <body>
+    <header class="site-header">
+        <figure class="branding">
+            <a href="home.html"><img src="images/coconot.svg" alt="logo" width="50" height="50">
+            <span>Timbuktu Chamber of Commerce</span></a>
+        </figure>
+       
+        <nav id="primaryNav" class="navigation">
+        <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="others"><a href="discover.html">Discover</a></li>
+            <li class="others"><a href="directory.html">Directory</a></li>
+            <li class="others"><a href="join.html">Join</a></li>
+        </ul>
+        </nav>
+      
+        <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+            <svg class="icon-burger" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="label">Menu</span>
+        </button>
+    </header>
+    
+    <!-- MAIN SECTION -->
+    
+    <main>
+        <img src="images/hero_mt_kilimanjaro.jpg" alt="hero-img">
+        <h1>Homepage</h1>
+          <div class="main-content">
+        <section class="card-event">
+
+            <!-- Events Section -->
+
+    
+    </main>
+    <footer class="footer-main">
+        <div class="company-info">
+            <p><strong>Contact Us</strong></p>
+            <p><strong>Address:</strong> 123 Main Street, Timbuktu, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@timbuktu.com">contact@timbuktu.com</a></p>
+        </div>
+        <div class="social-media">
+            <nav class="icons">
+            <ul>
+                <li><a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="GitHub" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn" width="40" height="40" loading="lazy"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram-logo.svg" alt="Instagram" width="40" height="40" loading="lazy"></a></li>
+            </ul>
+            </nav>
+        </div>
+        
+        <div class="footer-rights">
+            <div class="rights">
+                <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
+                <p id="lastModified" class="lastmod"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
