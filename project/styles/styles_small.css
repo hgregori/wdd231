@@ -1,0 +1,129 @@
+/* -------------------------------------
+   BASE – MOBILE FIRST (main stylesheet)
+   Gregorio Engenharia - 2026
+---------------------------------------*/
+
+/* ===== COLOR SCHEME ===== */
+:root {
+    --blue-dark: #0A3A5F;
+    --blue-medium: #105C8D;
+    --blue-light: #D9E9F5;
+    --gray-light: #F4F4F4;
+    --gray-medium: #D0D0D0;
+    --white: #FFFFFF;
+    --radius: 12px;
+}
+
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--gray-light);
+    color: #222;
+}
+
+h1, h2, h3 {
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    margin: 18px;
+    padding: 18px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px #00000010;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 24px 18px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+nav a, nav li {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== HERO ===== */
+.hero img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+/* ===== FORMS ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-medium);
+    font-size: 1rem;
+    background: var(--white);
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--blue-medium);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--blue-dark);
+}
+
+/* ===== SERVICE CARDS ===== */
+.service img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 30px 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-social img {
+    width: 32px;
+    margin: 0 8px;
+}
+
+.footer-copy {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
