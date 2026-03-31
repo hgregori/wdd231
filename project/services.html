@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Gregorio Engenharia</title>
+    <meta name="author" content="Henrique Gregorio">
+    <meta name="description" content="Gregorio Engenharia oferece serviços de regularização de imóveis, incluindo Reurb, Usucapião, Habite-se e Regularização de Obra. Agende uma consultoria especializada para garantir a documentação do seu imóvel.">
+
 
     <!-- META OG -->
     <meta property="og:title" content="Gregorio Engenharia - Serviços de Regularização">
@@ -12,18 +15,25 @@
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="Imagem de serviços de documentação">
 
+     <link rel="icon" href="images/favcon_engineering.png">
     <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
+
+       <!-- JavaScript -->
+    <script src="scripts/services.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>Gregorio Engenharia</h1>
+    <a href="index.html" class="brand">
+        <h1>Gregorio Engenharia</h1>
+    </a>
+
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="discover.html">Serviços</a></li>
+            <li><a href="services.html">Serviços</a></li>
             <li><a href="calculations.html">Cálculos</a></li>
         </ul>
     </nav>
@@ -33,34 +43,20 @@
 
     <h2>Serviços Disponíveis</h2>
 
-    <section class="service">
-        <img src="" alt="Imagem Reurb">
-        <h3>Reurb</h3>
-        <p>Regularização fundiária para áreas urbanas.</p>
-        <p><strong>Preço médio:</strong> R$ 2.000 – R$ 8.000</p>
-    </section>
+    <!-- ✅ Botão fora dos cards -->
+    <div class="services-action">
+        <button onclick="window.location.href='index.html#schedule'">
+            Agendar Consultoria
+        </button>
+    </div>
 
-    <section class="service">
-        <img src="" alt="Imagem Usucapião">
-        <h3>Usucapião</h3>
-        <p>Aquisição de propriedade por posse contínua.</p>
-        <p><strong>Preço médio:</strong> R$ 3.000 – R$ 10.000</p>
-    </section>
+    <div id="card-services"></div>
 
-    <section class="service">
-        <img src="" alt="Imagem Habite-se">
-        <h3>Habite-se</h3>
-        <p>Documento de conformidade da construção.</p>
-        <p><strong>Preço médio:</strong> R$ 1.000 – R$ 5.000</p>
-    </section>
-
-    <section class="service">
-        <img src="" alt="Imagem Regularização de Obra">
-        <h3>Regularização de Construção</h3>
-        <p>Legalização de obras não aprovadas.</p>
-        <p><strong>Preço médio:</strong> R$ 1.500 – R$ 7.000</p>
-    </section>
-
+        <div class="services-action">
+        <button onclick="window.location.href='index.html#schedule'">
+            Agendar Consultoria
+        </button>
+    </div>
 </main>
 
 <footer>
@@ -74,10 +70,10 @@
     <div>
         <h3>Siga-nos</h3>
         <div class="footer-social">
-            <img src="" alt="Instagram">
-            <img src="" alt="Facebook">
-            <img src="" alt="LinkedIn">
-            <img src="" alt="WhatsApp">
+            <img src="images/instagram-logo.svg" alt="Instagram">
+            <img src="images/github-142-svgrepo-com.svg" alt="Github">
+            <img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn">
+            <img src="images/square-whatsapp.svg" alt="WhatsApp">
         </div>
     </div>
 

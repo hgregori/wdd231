@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gregorio Engenharia - Início</title>
+    <meta name="author" content="Henrique Gregorio">
+    <meta name="description" content="Gregorio Engenharia oferece serviços de regularização de imóveis, incluindo Reurb, Usucapião, Habite-se e Regularização de Obra. Agende uma consultoria especializada para garantir a documentação do seu imóvel.">
 
     <!-- META OG -->
     <meta property="og:title" content="Gregorio Engenharia - Regularização e Serviços Técnicos">
@@ -12,6 +14,7 @@
     <meta property="og:image" content="">
     <meta property="og:image:alt" content="Imagem hero de engenharia e documentação">
 
+    <link rel="icon" href="images/favcon_engineering.png">
     <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
@@ -19,11 +22,13 @@
 <body>
 
 <header>
-    <h1>Gregorio Engenharia</h1>
+    <a href="index.html" class="brand">
+        <h1>Gregorio Engenharia</h1>
+    </a>
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="discover.html">Serviços</a></li>
+            <li><a href="services.html">Serviços</a></li>
             <li><a href="calculations.html">Cálculos</a></li>
         </ul>
     </nav>
@@ -32,12 +37,14 @@
 <main>
 
     <!-- HERO -->
-    <section class="hero">
-        <img src="" alt="Imagem ilustrativa de engenharia e documentação">
-        <div>
-            <h2>Regularização com Segurança e Transparência</h2>
-            <p>Documentação completa: Reurb, Usucapião, Habite-se e Regularização de Obra.</p>
-        </div>
+    <div class="hero">
+        <img src="" alt="Imagem ilustrativa de engenharia e documentação" loading="lazy">
+    </div>
+
+
+    <section class="intro">
+        <h2>Regularização com Segurança e Transparência</h2>
+        <p>Documentação completa: Reurb, Usucapião, Habite-se e Regularização de Obra.</p>
     </section>
 
     <section class="intro">
@@ -46,29 +53,32 @@
     </section>
 
     <!-- AGENDAMENTO -->
-    <section class="schedule">
+    <section class="schedule" id="schedule">
         <h2>Agende um Atendimento</h2>
 
         <form>
-            <label>Nome:</label>
-            <input type="text">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
 
-            <label>E-mail:</label>
-            <input type="email">
+            <label for="tell">Telefone:</label>
+            <input type="tel" id="tell" required>
 
-            <label>Serviço:</label>
-            <select>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+
+            <label for="service">Serviço:</label>
+            <select id="service" required>
+                <option>Consultar</option>
                 <option>Reurb</option>
                 <option>Usucapião</option>
                 <option>Habite-se</option>
                 <option>Regularização de Obra</option>
-                <option>Consulta</option>
             </select>
 
-            <label>Data:</label>
-            <input type="date">
+            <label for="date">Data:</label>
+            <input type="date" id="date">
 
-            <button type="button">Enviar (não funcional)</button>
+            <button type="submit">Agendar</button>
         </form>
     </section>
 
@@ -85,11 +95,11 @@
 
     <div>
         <h3>Siga-nos</h3>
-        <div class="footer-social">
-            <img src="" alt="Instagram">
-            <img src="" alt="Facebook">
-            <img src="" alt="LinkedIn">
-            <img src="" alt="WhatsApp">
+       <div class="footer-social">
+            <img src="images/instagram-logo.svg" alt="Instagram">
+            <img src="images/github-142-svgrepo-com.svg" alt="Github">
+            <img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn">
+            <img src="images/square-whatsapp.svg" alt="WhatsApp">
         </div>
     </div>
 
