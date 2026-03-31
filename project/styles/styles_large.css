@@ -99,4 +99,14 @@
         font-size: 1.15rem;
     }
 
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .calculation {
+    max-width: 600px;
+    }
 }

@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
 
-    
+    <script src="scripts/calculations.js" defer></script>
+    <script src="scripts/date.js" defer></script>
  
 </head>
 <body>
@@ -41,18 +42,40 @@
 
 <main>
 
+
     <h2>Cálculos Simples</h2>
 
-    <form class="calc-form">
-        <label>Largura (m):</label>
-        <input type="number">
+    <div class="calculation">
+    <form class="calc-form" id="calc-form">
 
-        <label>Comprimento (m):</label>
-        <input type="number">
+        <select id="calc-type">
+            <option value="">-- Escolha um cálculo --</option>
+            <option value="area">Área (Retângulo)</option>
+            <option value="perimeter">Perímetro (Retângulo)</option>
+            <option value="rectangle">Retângulo: Área e Perímetro</option>
+            <option value="square">Quadrado: Área e Perímetro</option>
+            <option value="triangle">Triângulo: Área</option>
+            <option value="circle">Círculo: Área e Circunferência</option>
+            <option value="volume">Volume</option>
+        </select>
 
-        <p>* O cálculo será implementado futuramente com JavaScript.</p>
+        <label for="unit">Unidade:</label>
+        <select id="unit">
+            <option value="m">Metros</option>
+            <option value="cm">Centímetros</option>
+        </select>
+
+
+        <div id="input-fields"></div>
+
+        <!-- Botão de calcular -->
+        <button type="button" id="calculate-btn">Calcular</button>
+
+        <!-- Resultado -->
+        <p id="result" class="calc-result"></p>
+
     </form>
-
+    </div>
 </main>
 
 <footer>
@@ -72,7 +95,10 @@
         </div>
     </div>
 
-    <p class="footer-copy">Projeto acadêmico © 2026</p>
+    <div>
+    <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
+    <p id="lastModified" class="lastmod"></p>
+    </div>
 </footer>
 
 </body>

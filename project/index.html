@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gregorio Engenharia - Início</title>
+    <title>Início - Gregorio Engenharia</title>
     <meta name="author" content="Henrique Gregorio">
     <meta name="description" content="Gregorio Engenharia oferece serviços de regularização de imóveis, incluindo Reurb, Usucapião, Habite-se e Regularização de Obra. Agende uma consultoria especializada para garantir a documentação do seu imóvel.">
 
@@ -18,6 +18,8 @@
     <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
+
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
 
@@ -103,8 +105,10 @@
         </div>
     </div>
 
-    <p class="footer-copy">Projeto acadêmico - Gregorio Engenharia © 2026</p>
-
+    <div>
+    <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
+    <p id="lastModified" class="lastmod"></p>
+    </div>
 </footer>
 
 </body>
