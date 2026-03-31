@@ -109,4 +109,26 @@
     .calculation {
     max-width: 600px;
     }
+
+    
+ .hamburger {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+        background: none;
+        width: auto;
+    }
+
+    #mobile-nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    #mobile-nav li {
+        margin: 0;
+    }
 }
+
+

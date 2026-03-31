@@ -255,3 +255,62 @@ footer {
 .service:nth-child(4) { animation-delay: 0.4s; }
 .service:nth-child(5) { animation-delay: 0.5s; }
 .service:nth-child(6) { animation-delay: 0.6s; }
+
+/* ===== HAMBURGER MENU ===== */
+
+.hamburger {
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+#mobile-nav {
+    display: none;
+    width: 100%;
+    background: var(--blue-dark);
+    padding: 15px 0;
+}
+
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-nav li {
+    list-style: none;
+    margin: 12px 0;
+}
+
+#mobile-nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+#mobile-nav.open {
+    display: block;
+}
