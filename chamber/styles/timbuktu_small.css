@@ -397,6 +397,9 @@ main h1 {
   box-shadow: var(--shadows);
   transition: background .25s ease, transform .15s ease;
   min-width: 120px;
+
+  opacity: 0;
+  animation: membershipFade 0.8s ease forwards;
 }
 
 .membership button:hover {
@@ -572,12 +575,6 @@ dialog button:active {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* MEMBERSHIP BUTTON SECTION */
-.membership button {
-  opacity: 0;
-  animation: membershipFade 0.8s ease forwards;
 }
 
 /* Stagger effect */
