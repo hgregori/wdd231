@@ -314,3 +314,59 @@ footer {
 #mobile-nav.open {
     display: block;
 }
+
+/* ===== WAYFINDING ACTIVE CLASS ===== */
+#mobile-nav a.active {
+    color: var(--blue-light);
+    border-bottom: 2px solid var(--blue-light);
+}
+
+/* ===== MODAL DIALOG ===== */
+dialog {
+    border: none;
+    border-radius: var(--radius);
+    padding: 0;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+    max-width: 90%;
+    width: 450px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--blue-dark);
+    padding: 0;
+    line-height: 1;
+    width: auto;
+}
+
+#close-modal:hover {
+    color: #ff3333;
+    transform: none;
+    background: none;
+}
+
+#modal-img {
+    width: 100%;
+    border-radius: var(--radius);
+    object-fit: cover;
+    max-height: 250px;
+}

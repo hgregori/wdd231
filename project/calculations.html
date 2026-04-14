@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - Gregorio Engenharia</title>
+    <title>Cálculos - Gregorio Engenharia</title>
     <meta name="author" content="Henrique Gregorio">
-    <meta name="description" content="Gregorio Engenharia oferece serviços de regularização de imóveis, incluindo Reurb, Usucapião, Habite-se e Regularização. Agende consultoria especializada.">
+    <meta name="description" content="Ferramentas online para cálculos simples de engenharia: área, perímetro, volume, circunferências e mais.">
 
     <!-- META OG -->
-    <meta property="og:title" content="Gregorio Engenharia - Regularização e Serviços Técnicos">
-    <meta property="og:description" content="Informações sobre Reurb, Usucapião, Habite-se e regularização de imóveis. Agende seu atendimento.">
+    <meta property="og:title" content="Cálculos - Gregorio Engenharia">
+    <meta property="og:description" content="Use nossas ferramentas de cálculo rápido.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://hgregori.github.io/wdd231/project/images/engineering6.png">
-    <meta property="og:url" content="https://hgregori.github.io/wdd231/project/index.html">
+    <meta property="og:url" content="https://hgregori.github.io/wdd231/project/calculations.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +23,8 @@
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
 
-    <script src="scripts/calculations.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/hamburger.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/calculations.js"></script>
 </head>
 <body>
 
@@ -56,7 +55,7 @@
 
     <div class="calculation">
     <form class="calc-form" id="calc-form">
-
+        <label for="calc-type">Tipo de Cálculo:</label>
         <select id="calc-type">
             <option value="">-- Escolha um cálculo --</option>
             <option value="area">Área (Retângulo)</option>

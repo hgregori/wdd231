@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serviços - Gregorio Engenharia</title>
+    <title>Obrigado - Gregorio Engenharia</title>
     <meta name="author" content="Henrique Gregorio">
-    <meta name="description" content="Conheça os serviços de engenharia civil e regularização de imóveis: Reurb, Usucapião, Habite-se, Laudos Cautelares, Projetos e ART.">
+    <meta name="description" content="Agradecemos o seu contato com a Gregorio Engenharia.">
 
     <!-- META OG -->
-    <meta property="og:title" content="Serviços - Gregorio Engenharia">
-    <meta property="og:description" content="Serviços especializados em Reurb, Usucapião, Habite-se e mais.">
+    <meta property="og:title" content="Obrigado - Gregorio Engenharia">
+    <meta property="og:description" content="Agradecemos o seu contato.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://hgregori.github.io/wdd231/project/images/engineering6.png">
-    <meta property="og:url" content="https://hgregori.github.io/wdd231/project/services.html">
+    <meta property="og:url" content="https://hgregori.github.io/wdd231/project/thanks.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +23,8 @@
     <link rel="stylesheet" href="styles/styles_small.css">
     <link rel="stylesheet" href="styles/styles_large.css">
 
-       <!-- JavaScript -->
     <script type="module" src="scripts/main.js"></script>
-    <script type="module" src="scripts/services.js"></script>
+    <script type="module" src="scripts/thanks.js"></script>
 </head>
 <body>
 
@@ -47,36 +46,23 @@
             <li><a href="calculations.html">Cálculos</a></li>
         </ul>
     </nav>
+
 </header>
 
 <main>
 
-    <h2>Serviços Disponíveis</h2>
-
-    <!-- ✅ Botão fora dos cards -->
-    <div class="services-action">
-        <button onclick="window.location.href='index.html#schedule'">
-            Agendar Consultoria
-        </button>
-    </div>
-
-    <div id="card-services"></div>
-    
-    <!-- Modal Dialog -->
-    <dialog id="service-modal">
-        <div class="modal-content">
-            <button id="close-modal" aria-label="Close modal">&times;</button>
-            <h3 id="modal-title"></h3>
-            <img id="modal-img" src="" alt="">
-            <p id="modal-desc"></p>
+    <section class="intro" style="text-align: center; max-width: 600px; margin: 40px auto;">
+        <h2>Consulta Agendada!</h2>
+        <p>Obrigado por entrar em contato. Aqui estão os dados que você enviou:</p>
+        
+        <div id="results" class="calc-result" style="text-align: left; background: var(--gray-light); padding: 20px; border-radius: var(--radius); margin-top: 20px;">
         </div>
-    </dialog>
 
-        <div class="services-action">
-        <button onclick="window.location.href='index.html#schedule'">
-            Agendar Consultoria
-        </button>
-    </div>
+        <div class="services-action" style="margin-top: 30px;">
+            <button onclick="window.location.href='index.html'">Voltar ao Início</button>
+        </div>
+    </section>
+
 </main>
 
 <footer>
@@ -85,11 +71,12 @@
         <h3>Contato</h3>
         <p>Email: contato@gregorioengenharia.com</p>
         <p>Telefone: (11) 90000-0000</p>
+        <p>Osasco - SP</p>
     </div>
 
     <div>
         <h3>Siga-nos</h3>
-        <div class="footer-social">
+       <div class="footer-social">
             <a href="https://www.instagram.com/"><img src="images/instagram-logo.svg" alt="Instagram"></a>
             <a href="https://github.com/hgregori"><img src="images/github-142-svgrepo-com.svg" alt="Github"></a>
             <a href="https://www.linkedin.com/in/henrique-gregorio/"><img src="images/linkedin-1-svgrepo-com.svg" alt="LinkedIn"></a>
@@ -100,7 +87,6 @@
     <p class="copy">&copy;<span id="currentYear"></span> | Henrique Gregorio | Brazil</p>
     <p id="lastModified" class="lastmod"></p>
     </div>
-
 </footer>
 
 </body>

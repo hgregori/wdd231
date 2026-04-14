@@ -1,37 +1,91 @@
   [{
     "name": "Reurb",
     "price_range": "R$ 2.000 - R$ 8.000",
-    "image": "images/engineering.jpg",
-    "description": "A Regularização Fundiária Urbana (Reurb) é um processo administrativo destinado a regularizar assentamentos informais, permitindo registro em cartório, emissão de matrículas individuais e acesso a infraestrutura urbana."
+    "image": "images/hero_img.jpg",
+    "description": "A Regularização Fundiária Urbana (Reurb) é um processo destinado a regularizar assentamentos informais, permitindo registro em cartório."
   },
   {
     "name": "Usucapião",
     "price_range": "R$ 3.000 - R$ 10.000",
-    "image": "images/engineering1.jpg",
-    "description": "O processo de usucapião garante o direito de propriedade mediante posse contínua e pacífica do imóvel. Inclui levantamento planialtimétrico, memorial descritivo e acompanhamento técnico."
+    "image": "images/hero_img.jpg",
+    "description": "O processo de usucapião garante o direito de propriedade mediante posse contínua e pacífica do imóvel. Inclui levantamento técnico."
   },
   {
     "name": "Habite-se",
     "price_range": "R$ 1.000 - R$ 5.000",
-    "image": "images/engineering2.jpg",
-    "description": "Documento emitido pela prefeitura que atesta que a construção foi concluída conforme o projeto aprovado. Essencial para averbação da obra no cartório e para venda ou financiamento."
+    "image": "images/hero_img.jpg",
+    "description": "Documento emitido pela prefeitura que atesta que a construção foi concluída conforme o projeto aprovado."
   },
   {
     "name": "Regularização de Construção",
     "price_range": "R$ 1.500 - R$ 7.000",
-    "image": "images/engineering3.jpg",
-    "description": "A regularização de construção legaliza obras feitas sem aprovação, incluindo elaboração de planta 'as-built', emissão de ART e atualização documental junto à prefeitura."
+    "image": "images/hero_img.jpg",
+    "description": "A regularização legaliza obras feitas sem aprovação, incluindo elaboração de planta 'as-built' e emissão de ART."
   },
   {
     "name": "Laudos e ART",
     "price_range": "R$ 500 - R$ 3.000",
-    "image": "images/engineering4.jpg",
-    "description": "Elaboração de laudos técnicos estruturais, elétricos e de segurança, além da emissão de ART (Anotação de Responsabilidade Técnica) conforme exigido pelo CREA."
+    "image": "images/hero_img.jpg",
+    "description": "Elaboração de laudos técnicos estruturais, elétricos e de segurança, além da emissão de ART exigida pelo CREA."
   },
   {
-    "name": "Projeto Arquitetônico Simplificado",
+    "name": "Projeto Arquitetônico",
     "price_range": "R$ 800 - R$ 4.000",
-    "image": "images/engineering5.jpg",
-    "description": "Projeto arquitetônico simplificado para aprovação na prefeitura, incluindo planta baixa, cortes, fachadas e quadro de áreas, seguindo normativas do município."
+    "image": "images/hero_img.jpg",
+    "description": "Projeto arquitetônico para aprovação na prefeitura, incluindo planta baixa, cortes, e fachadas."
+  },
+  {
+    "name": "Projeto Elétrico",
+    "price_range": "R$ 700 - R$ 3.500",
+    "image": "images/hero_img.jpg",
+    "description": "Dimensionamento de cargas, circuitos e quadros de distribuição para garantir a segurança das instalações."
+  },
+  {
+    "name": "Projeto Hidrossanitário",
+    "price_range": "R$ 800 - R$ 3.000",
+    "image": "images/hero_img.jpg",
+    "description": "Projeto de água fria, esgoto e águas pluviais, em conformidade com as normas técnicas vigentes."
+  },
+  {
+    "name": "Laudo Cautelar de Vizinhança",
+    "price_range": "R$ 1.200 - R$ 4.500",
+    "image": "images/hero_img.jpg",
+    "description": "Vistoria prévia no entorno de novas obras para registrar o estado de conservação dos imóveis vizinhos."
+  },
+  {
+    "name": "Desmembramento de Lote",
+    "price_range": "R$ 1.500 - R$ 6.000",
+    "image": "images/hero_img.jpg",
+    "description": "Divisão de um terreno aprovado pela prefeitura em dois ou mais lotes independentes para novas matrículas."
+  },
+  {
+    "name": "Unificação de Lotes",
+    "price_range": "R$ 1.500 - R$ 6.000",
+    "image": "images/hero_img.jpg",
+    "description": "Fusão de dois ou mais terrenos lindeiros para formar uma única área maior, com atualização no cartório."
+  },
+  {
+    "name": "Levantamento Topográfico",
+    "price_range": "R$ 1.000 - R$ 5.000",
+    "image": "images/hero_img.jpg",
+    "description": "Medição exata de áreas urbanas e rurais para confecção de planta planialtimétrica e curvas de nível."
+  },
+  {
+    "name": "Retificação de Área",
+    "price_range": "R$ 2.000 - R$ 8.000",
+    "image": "images/hero_img.jpg",
+    "description": "Correção de medidas divergentes entre o documento do imóvel (matrícula) e o tamanho real do terreno."
+  },
+  {
+    "name": "Projeto Estrutural",
+    "price_range": "R$ 1.500 - R$ 8.000",
+    "image": "images/hero_img.jpg",
+    "description": "Dimensionamento de vigas, pilares e fundações (concreto armado) para a estabilidade da construção."
+  },
+  {
+    "name": "Aprovação em Condomínio",
+    "price_range": "R$ 500 - R$ 2.000",
+    "image": "images/hero_img.jpg",
+    "description": "Preparação e submissão da documentação arquitetônica para avaliação técnica de condomínios fechados."
   }
 ]

@@ -1,8 +1,12 @@
+export function initDate() {
+    const today = new Date();
+    const yearElem = document.querySelector('#currentYear');
+    if (yearElem) {
+        yearElem.textContent = today.getFullYear();
+    }
 
-const today = new Date();
-
-document.querySelector('#currentYear').textContent = today.getFullYear();
-
-document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
-
-
+    const modElem = document.querySelector('#lastModified');
+    if (modElem) {
+        modElem.textContent = `Last Modified: ${document.lastModified}`;
+    }
+}
